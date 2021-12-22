@@ -23,11 +23,11 @@ INSERT INTO owners ( id_owner, owner_name, surname, identity_card, telephone, ad
 		
 INSERT INTO pets ( id_pet, pet_name, birth, animal, breed, dangerous_breed, monthly_fee, fk_id_owner )
     VALUES		
-		( '101', 'Mati', '2013-02-05', 'dog', 'mongrel', FALSE, 20.5, '1' ),
+		( '101', 'Mati', '2003-02-05', 'dog', 'mongrel', FALSE, 20.5, '1' ),
 		( '102', 'Little', '2019-01-06', 'cat', 'siamese', TRUE, 30.5, '1' ),
 		( '103', 'Idefix', '2019-05-02', 'dog', 'cocker', TRUE, 20.5, '2' ),
 		( '104', 'Blue', '2018-01-21', 'dog', 'mastin', FALSE, 20.5, '2' ),
-		( '105', 'Socks', '2015-05-18', 'cat', 'siamese', TRUE, 30.5, '11' ),
+		( '105', 'Socks', '2015-05-18', 'cat', 'siamese', TRUE, 30.5, '10' ),
 		( '106', 'Ringo', '2017-03-25', 'cat', 'angora', TRUE, 30.5, '3' ),
 		( '107', 'Lola', ' 2019-08-01', 'dog', 'german shepherd ', FALSE, 20.5, '4' ),
 		( '108', 'Shots', '2018-07-21', 'dog', 'podle', FALSE, 20.5, '4' ),
@@ -45,7 +45,7 @@ INSERT INTO pets ( id_pet, pet_name, birth, animal, breed, dangerous_breed, mont
 		( '120', 'Thunder', '2019-03-05', 'dog', 'pit bull terrier', TRUE, 20.5, '9' ),
 		( '121', 'Tato', '2016-02-15', 'cat', 'siamese', TRUE, 30.5, '9' ),
 		( '122', 'Beltza', '2000-12-12', 'cat', 'angora', TRUE, 30.5, '10' ),
-		( '123', 'Tintin', '1999-01-23', 'cat', 'mongrel', TRUE, 30.5, '2' );
+		( '123', 'Tintin', '2000-01-23', 'cat', 'mongrel', TRUE, 30.5, '2' );
 		
 
 
