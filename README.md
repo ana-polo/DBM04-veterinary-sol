@@ -62,32 +62,34 @@ Students:
     <summary>CLICK ME TO SEE THE TABLES DEFINITION</summary>
 
 *PETS_OWNERS*
-	- Owner IDENTIFIER
-	- Name 
-	- Surnames 
-	- Identity card 
-	- Telephone (Only one per each owner)
-	- Address
-	- City. The default value must be Edimburgh
-	- Post code
-	- Whether you are a member or not
-	- Number of dogs, can not be greater than 7
-	- Number of cats, can not be greater than 5
+    - Owner IDENTIFIER
+    - Name 
+    - Surnames 
+    - Identity card 
+    - Telephone (Only one per each owner)
+    - Address
+    - City. The default value must be Edimburgh
+    - Post code
+    - Whether you are a member or not
+    - Number of dogs, can not be greater than 7
+    - Number of cats, can not be greater than 5
 		 
 		 
 *PETS*
-	- Identifier pet
-	- Name 
-	- Date of birth cannot be earlier than 01/01/2000),
-	- Type of animal. It can only be dogs or cats
-	- Breed 
-	- Whether it is a dangerous breed or not, by default they are not
-	- Monthly fee
-	- Owner of the animal
+    - Identifier pet
+    - Name 
+    - Date of birth cannot be earlier than 01/01/2000),
+    - Type of animal. It can only be dogs or cats
+    - Breed 
+    - Whether it is a dangerous breed or not, by default they are not
+    - Monthly fee
+    - Owner of the animal
 </details>
+
 
 **REMARKS:**
 - Keep in mind that there can be no owner who does not have any animal.
+
 
 **👀 Remember ot forget!**
 - Properly format and document the code.
@@ -100,7 +102,8 @@ Students:
 - Make the necessary changes to the structure of the DB or data in order to load the information into the tables.
 
 
-**⚠️ WARNING:** The operations CAN NOT be done in the creation of the tables.
+**⚠️ WARNING:** 
+- The operations CAN NOT be done in the creation of the tables.
  
  
 <details>
@@ -146,6 +149,7 @@ Students:
     121 ; Tato    ; 02/15/2016 ; cat ; siamese          ; NULL    ; 30.5 ; 9
     122 ; Beltza  ; 12/12/2000 ; cat ; angora           ; NULL    ; 30.5 ; 10
     123 ; Tintin  ; 01/23/1999 ; cat ; mongrel          ; NULL    ; 30.5 ; 2
+
 </details>
 
 
@@ -153,12 +157,11 @@ Students:
 - Properly format and document the code.		 
 
 
-
 <a name="query"></a>
 #### iii. Querying data.
 ****
 ##### 📝 TO DO:
-        - Create SQL scripts that allow you to obtain the following data from the created DB.
+    - Create SQL scripts that allow you to obtain the following data from the created DB.
 	
 	
 <details>
@@ -183,6 +186,7 @@ Students:
 16. Update the quota of dogs by increasing it by 1 euro to those who were born before January the first, 2018'.
 17. Update the date of birth of cats, adding 1 month.
 18. Delete Peque and update the number of cats owned bay the owner.
+
 </details>
 
 
