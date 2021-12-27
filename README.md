@@ -1,6 +1,6 @@
 # DBM04-Veterinary
 
-![Logo de Team](https://github.com/ana-polo/DBM01-pubs/blob/main/DBM.gif "Team logo")
+![Logo de Team](https://github.com/ana-polo/DBM04-veterinary-sol/blob/main/DBM.gif "Team logo")
 
 
 <a name="top"></a>
@@ -31,7 +31,6 @@ A list of technologies used within the project:
     - SQL-DQL: Data Query Language* 
 
 
-[Top](#top)
 <a name="collaboration"></a>
 ### 3. Collaboration
 ***
@@ -41,7 +40,6 @@ Students:
 *IrvingVqz.*
 
 
-[Top](#top)
 <a name="problem-definition"></a>
 ### 4. Problem definition
 ***
@@ -89,12 +87,11 @@ Students:
 </details>
 
 **REMARKS:**
-    -Keep in mind that there can be no owner who does not have any animal.
+- Keep in mind that there can be no owner who does not have any animal.
 
 **👀 Remember ot forget!**
 - Properly format and document the code.
-#
-#
+
 
 <a name="insert"></a>
 #### ii. Recording data.
@@ -109,7 +106,7 @@ Students:
 <details>
     <summary>CLICK ME TO SEE THE DATA</summary>
      
-*	
+	
 *PETS_OWNER*
 	
      1 ; Bellatrix  ; Graham   ; 11111111h ; 698765432 ; Cromwell Road                      ; London    ; SW7 5BD ; TRUE  ; 1 ; 1 
@@ -124,6 +121,8 @@ Students:
     10 ; Nathaniel ; Campbell ; 12123432u ; 690987640 ; Leith Street                        ; Edimburgh ; EH1 3SP ; FALSE ; 0 ; 1 
 
 
+*PETS*
+	
     101 ; Mati    ; 02/05/2013 ; dog ; mongrel          ; 'FALSE' ; 20.5 ; 1
     102 ; Little  ; 01/06/2019 ; cat ; siamese          ;  NULL   ; 30.5 ; 1
     103 ; Idefix  ;  5/02/1999 ; dog ; cocker           ;  NULL   ; 20.5 ; 2
@@ -152,38 +151,38 @@ Students:
 
 **👀 Remember to not forget!**
 - Properly format and document the code.		 
-#
-#
+
+
 
 <a name="query"></a>
 #### iii. Querying data.
 ****
-##### TO DO:
-        - Create sql scripts that allow you to obtain the following data from the created DB.
+##### 📝 TO DO:
+        - Create SQL scripts that allow you to obtain the following data from the created DB.
 	
 	
 <details>
     <summary>CLICK ME TO SEE THE QUERIES</summary>
      
-*	
-    1. List the first and last names of cat owners.
-    2. List the first and last names of cat owners in a single field.
-    3. List the name and surname of cat owners in a single field, separated by 6 spaces. 
-    4. List the name and surname of cat owners in a single field, separated by 6 spaces with no spaces either in front or behind.
-    5. List the maximum number of dogs that cat owners have.
-    6. Add the number of animals (cats and dogs) that owners who have cats or dogs have and take it out along with the name and surname of the owner.
-    7. When was the youngest dog born? 
-    8. What about the oldest cat?
-    9. Bring out the age of all dogs.
-    10. Capitalize the names of the dogs.
-    11. Lowercase cat names.
-    12. In the names of the owners change the letter a to the letter b.
-    13. Replace the owners' surname Smith with Campbell.
-    14. In the names of the animals look for the position of the first a after the 3 character. For example. Matilda returns me 7.
-    15. How many years have passed between the oldest and youngest cat were born.
-    16. Update the quota of dogs by increasing it by 1 euro to those who were born before January the first, 2018'.
-    17. Update the date of birth of cats, adding 1 month.
-    18. Delete Peque and update the number of cats owned bay the owner.
+	
+1. List the first and last names of cat owners.
+2. List the first and last names of cat owners in a single field.
+3. List the name and surname of cat owners in a single field, separated by 6 spaces. 
+4. List the name and surname of cat owners in a single field, separated by 6 spaces with no spaces either in front or behind.
+5. List the maximum number of dogs that cat owners have.
+6. Add the number of animals (cats and dogs) that owners who have cats or dogs have and take it out along with the name and surname of the owner.
+7. When was the youngest dog born? 
+8. What about the oldest cat?
+9. Bring out the age of all dogs.
+10. Capitalize the names of the dogs.
+11. Lowercase cat names.
+12. In the names of the owners change the letter a to the letter b.
+13. Replace the owners' surname Smith with Campbell.
+14. In the names of the animals look for the position of the first a after the 3 character. For example. Matilda returns me 7.
+15. How many years have passed between the oldest and youngest cat were born.
+16. Update the quota of dogs by increasing it by 1 euro to those who were born before January the first, 2018'.
+17. Update the date of birth of cats, adding 1 month.
+18. Delete Peque and update the number of cats owned bay the owner.
 </details>
 
 
