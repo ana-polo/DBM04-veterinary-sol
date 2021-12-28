@@ -1,4 +1,4 @@
-# DBM04-Veterinary
+# DBM04-Veterinary-sol
 
 ![Logo de Team](https://github.com/ana-polo/DBM04-veterinary-sol/blob/main/DBM.gif "Team logo")
 
@@ -14,13 +14,13 @@
     3. [Querying data.](#query)
 	
 
+&nbsp;
 <a name="general-info"></a>
 ### 1. General Info
 ***
-**Status:** IN PROGRESS.
-####
 *Training exercise of design and management of databases carried out in the field of Database Management in the Higher Vocational training Degree in Management of Computer Network Systems*
 
+&nbsp;
 <a name="technologies"></a>
 ### 2. Technologies
 ***
@@ -31,6 +31,7 @@ A list of technologies used within the project:
     - SQL-DQL: Data Query Language* 
 
 
+&nbsp;
 <a name="collaboration"></a>
 ### 3. Collaboration
 ***
@@ -40,27 +41,33 @@ Students:
 *IrvingVqz.*
 
 
+&nbsp;
 <a name="problem-definition"></a>
 ### 4. Problem definition
 ***
 <a name="create"></a>
 #### i. Create a new database called high-school with the following tables in the new database
-****
-##### TO DO: 
-        1. Decide the appropriate name for each field, the most appropriate data type and whether it is mandatory that the field be 
-	   informed or not.
-	   
-        2. Think about the order in which you will create the tables, keep in mind the restrictions. Define ALL possible constraints 
-	   primary keys, foreign keys, etc.
+#
+📝 **TO DO:** 
+- 1.- Decide the appropriate name for each field, the most appropriate data type and whether it is mandatory that the field be informed or not.	   
+- 2.- Think about the order in which you will create the tables, keep in mind the restrictions. Define ALL possible constraints primary keys, foreign keys, etc.
 
 
-**⚠️ WARNING:** 
+⚠️ **WARNING:** 
 - All the operations must be done in the creation of the tables.
 
+
+**👀 Remember ot forget!**
+- Properly format and document the code.
+
+
+&nbsp;
 
 <details>
     <summary>CLICK ME TO SEE THE TABLES DEFINITION</summary>
 
+<br />
+	
 *PETS_OWNERS*
     - Owner IDENTIFIER
     - Name 
@@ -84,32 +91,35 @@ Students:
     - Whether it is a dangerous breed or not, by default they are not
     - Monthly fee
     - Owner of the animal
-</details>
 
-
+	
 **REMARKS:**
 - Keep in mind that there can be no owner who does not have any animal.
 
-
-**👀 Remember ot forget!**
-- Properly format and document the code.
+</details>
 
 
+&nbsp;
 <a name="insert"></a>
 #### ii. Recording data.
-****
-##### TO DO:
+#
+📝 **TO DO:**
 - Make the necessary changes to the structure of the DB or data in order to load the information into the tables.
 
 
-**⚠️ WARNING:** 
+⚠️ **WARNING:** 
 - The operations CAN NOT be done in the creation of the tables.
+
+
+👀 **Remember to not forget!**
+- Properly format and document the code.		 
+
  
- 
+&nbsp;
 <details>
     <summary>CLICK ME TO SEE THE DATA</summary>
      
-	
+<br />	
 *PETS_OWNER*
 	
      1 ; Bellatrix  ; Graham   ; 11111111h ; 698765432 ; Cromwell Road                      ; London    ; SW7 5BD ; TRUE  ; 1 ; 1 
@@ -153,20 +163,26 @@ Students:
 </details>
 
 
-**👀 Remember to not forget!**
+
+&nbsp;
+<a name="query"></a>  
+#### iii. Querying data.
+#
+
+📝 **TO DO:**
+- Create SQL scripts that allow you to obtain the following data from the created DB.
+
+
+👀 **Remember to not forget!**
+- Precede each script with a comment that corresponds to its statement
 - Properly format and document the code.		 
 
+&nbsp;
 
-<a name="query"></a>
-#### iii. Querying data.
-****
-##### 📝 TO DO:
-    - Create SQL scripts that allow you to obtain the following data from the created DB.
-	
-	
 <details>
     <summary>CLICK ME TO SEE THE QUERIES</summary>
      
+<br />
 	
 1. List the first and last names of cat owners.
 2. List the first and last names of cat owners in a single field.
@@ -190,6 +206,3 @@ Students:
 </details>
 
 
-**👀 Remember to not forget!**
-- Precede each script with a comment that corresponds to its statement
-- Properly format and document the code.		 
