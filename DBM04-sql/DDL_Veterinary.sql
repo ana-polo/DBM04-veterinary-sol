@@ -8,7 +8,7 @@
  DROP DATABASE IF EXISTS veterinary;
 
 
-CREATE DATABASE IF NOT EXISTS veterinary;
+CREATE DATABASE IF NOT EXISTS veterinary CHARACTER SET utf8mb4 COLLATE utf8mb4_spanish_ci;
 use veterinary;
 
 CREATE TABLE IF NOT EXISTS owners (
@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS owners (
         AND ( number_of_dogs <> 0
             OR number_of_cats <> 0 )  ),
     CONSTRAINT pk_owners PRIMARY KEY ( id_owner )
-);		 
+) ENGINE = InnoDB;		 
 		 
 CREATE TABLE IF NOT EXISTS pets (
     id_pet CHAR( 3 ),
@@ -45,4 +45,4 @@ CREATE TABLE IF NOT EXISTS pets (
     CONSTRAINT pk_pets PRIMARY KEY ( id_pet ),
     CONSTRAINT fk_owners_pets FOREIGN KEY ( fk_id_owner )
         REFERENCES owners ( id_owner )
-);
+) ENGINE = InnoDB;
