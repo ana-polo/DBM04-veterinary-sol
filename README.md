@@ -14,7 +14,6 @@
     3. [Querying data 1.](#query1)
     4. [Querying data 2.](#query2)
     5. [Querying data 3.](#query3)
-    6. [Querying data 4.](#query4)
     	
 
 &nbsp;
@@ -286,18 +285,9 @@ A list of technologies used within the project:
 </details>
 
 
-👀 **Remember to not forget!**
-- Precede each script with a comment that corresponds to its statement
-- Properly format and document the code.		 
-
-	
-	
-</details>
-
-
 &nbsp;
 &nbsp;
-<a name="query1"></a>  
+<a name="query3"></a>  
 #### v. Querying data 3.
 #
 
@@ -317,33 +307,32 @@ A list of technologies used within the project:
      
 <br />
 	
-        1. 
+        1. Insert a new owner.
+        2. Insert a pet to that owner.
+        3. List the first name along with the last names in one field and the number of animals they have in another field, all dog owners. The first and last names will be displayed without whites either to the right of surnames or to the left of the first name.
+        4. List the first 2 lowercase names of the animals that pay a fee > € 10 and the fee they pay by rounding it to 2 decimal places.
+        5. List the different dates of birth of animals sorted downwards.
+        6. Count how many owners have dogs and no cats.
+        7. Returns the position of the first occurrence of the letter a in the name of the owners who are called Bea or Paco. Two ways.
+        8. Return the day of the week on which the dogs whose name contains an a.
+        9. List the name and surname of all the owners in a column, putting D./Dña (both) first. Two ways:
+
+        10. List the name of all cats whose name ends with vowel.
+        11. Add all dogs have in total all owners.
+        12. How many owners have dogs.
+        13. Dogs that are not of dangerous breed are reduced € 1 the fee.
+        14. Change the fee paid per puma to become € 88.99.
+        15. Delete Plas.
+        16. Replace the a with an i in the names of cats.
+        17. Change the name and date of birth of the cat Chiqui to Pepa with date of birth 12/12/2012.
+        18. List the different first names of the owners.
+        19. List the names of the owners sorted ascendingly.
+        20. List the name of all dogs whose name ends with x.
+        21. List the name and quota of the cats that have a fee between € 20 and € 34. Do it in two ways.
+        22. List the name and quota of the animal in cents and without decimals. Display the latter field as cents in the result.
+        23. List the names of the animals that have defined if they are of dangerous breed.
+        24. List the cheapest fee. Do it in two ways.
+        25. List the name and date of birth of the 3 oldest cats. 
+
 	
-</details>
-
-
-&nbsp;
-&nbsp;
-<a name="query1"></a>  
-#### vi. Querying data 4.
-#
-
-📝 **TO DO:**
-
-        1. Create SQL scripts that allow you to obtain the following data from the created DB.
-
-
-👀 **Remember to not forget!**
-- Precede each script with a comment that corresponds to its statement
-- Properly format and document the code.		 
-
-&nbsp;
-
-<details>
-    <summary>CLICK ME TO SEE THE QUERIES</summary>
-     
-<br />
-	
-        1. 
-
 </details>
