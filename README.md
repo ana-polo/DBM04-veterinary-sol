@@ -14,7 +14,6 @@
     3. [Querying data 1.](#query1)
     4. [Querying data 2.](#query2)
     5. [Querying data 3.](#query3)
-    6. [Querying data 4.](#query4)
     	
 
 &nbsp;
@@ -193,24 +192,24 @@ A list of technologies used within the project:
      
 <br />
 	
-        1. List the first and last names of cat owners.
-        2. List the first and last names of cat owners in a single field.
-        3. List the name and surname of cat owners in a single field, separated by 6 spaces. 
-        4. List the name and surname of cat owners in a single field, separated by 6 spaces with no spaces either in front or behind.
-        5. List the maximum number of dogs that cat owners have.
-        6. Add the number of animals (cats and dogs) that owners who have cats or dogs have and take it out along with the name and surname of the owner.
+        1. List the cat owners' names and surnames.
+        2. List the cat owners' name and surname all in a single field.
+        3. List the cat owners' name and surname in a single field, separated by 6 spaces. 
+        4. List the cat owners' name and surname in a single field, separated by 6 spaces with no spaces either in front or behind.
+        5. List the number of dogs that each cat owner have.
+        6. List the name, the surname and the total number of animals that each owner.
         7. When was the youngest dog born? 
-        8. What about the oldest cat?
-        9. Bring out the age of all dogs.
-        10. Capitalize the names of the dogs.
-        11. Lowercase cat names.
-        12. In the names of the owners change the letter a to the letter b.
-        13. Replace the owners' surname Smith with Campbell.
-        14. In the names of the animals look for the position of the first a after the 3 character. For example. Matilda returns me 7.
+        8. And what about the oldest cat?
+        9. List the age of each dogs and its name.
+        10. List the names of the dogs in capital letters.
+        11. List the cat names in lowercase.
+        12. List the names of the owners changing the letter 'a' to the letter 'b'.
+        13. Replace the owners' surname Smith with Winter.
+        14. List the animals' names and the position of the first 'a' after the 3 character. For example: Matilda returns me 7.
         15. How many years have passed between the oldest and youngest cat were born.
-        16. Update the quota of dogs by increasing it by 1 euro to those who were born before January the first, 2018'.
+        16. Update the quota of dogs by increasing it by 1 euro to those who were born before January the first, 2018.
         17. Update the date of birth of cats, adding 1 month.
-        18. Delete Peque and update the number of cats owned bay the owner.
+        18. Delete Peque and update the number of cats owned by the owner.
 
 </details>
 
@@ -286,18 +285,9 @@ A list of technologies used within the project:
 </details>
 
 
-👀 **Remember to not forget!**
-- Precede each script with a comment that corresponds to its statement
-- Properly format and document the code.		 
-
-	
-	
-</details>
-
-
 &nbsp;
 &nbsp;
-<a name="query1"></a>  
+<a name="query3"></a>  
 #### v. Querying data 3.
 #
 
@@ -317,33 +307,32 @@ A list of technologies used within the project:
      
 <br />
 	
-        1. 
+        1. Insert a new owner.
+        2. Insert a pet to that owner.
+        3. List the first name along with the last names in one field and the number of animals they have in another field, all dog owners. The first and last names will be displayed without whites either to the right of surnames or to the left of the first name.
+        4. List the first 2 lowercase names of the animals that pay a fee > € 10 and the fee they pay by rounding it to 2 decimal places.
+        5. List the different dates of birth of animals sorted downwards.
+        6. Count how many owners have dogs and no cats.
+        7. Returns the position of the first occurrence of the letter a in the name of the owners who are called Bea or Paco. Two ways.
+        8. Return the day of the week on which the dogs whose name contains an a.
+        9. List the name and surname of all the owners in a column, putting D./Dña (both) first. Two ways:
+
+        10. List the name of all cats whose name ends with vowel.
+        11. Add all dogs have in total all owners.
+        12. How many owners have dogs.
+        13. Dogs that are not of dangerous breed are reduced € 1 the fee.
+        14. Change the fee paid per puma to become € 88.99.
+        15. Delete Plas.
+        16. Replace the a with an i in the names of cats.
+        17. Change the name and date of birth of the cat Chiqui to Pepa with date of birth 12/12/2012.
+        18. List the different first names of the owners.
+        19. List the names of the owners sorted ascendingly.
+        20. List the name of all dogs whose name ends with x.
+        21. List the name and quota of the cats that have a fee between € 20 and € 34. Do it in two ways.
+        22. List the name and quota of the animal in cents and without decimals. Display the latter field as cents in the result.
+        23. List the names of the animals that have defined if they are of dangerous breed.
+        24. List the cheapest fee. Do it in two ways.
+        25. List the name and date of birth of the 3 oldest cats. 
+
 	
-</details>
-
-
-&nbsp;
-&nbsp;
-<a name="query1"></a>  
-#### vi. Querying data 4.
-#
-
-📝 **TO DO:**
-
-        1. Create SQL scripts that allow you to obtain the following data from the created DB.
-
-
-👀 **Remember to not forget!**
-- Precede each script with a comment that corresponds to its statement
-- Properly format and document the code.		 
-
-&nbsp;
-
-<details>
-    <summary>CLICK ME TO SEE THE QUERIES</summary>
-     
-<br />
-	
-        1. 
-
 </details>
