@@ -20,6 +20,7 @@
 ***
 *Training exercise of design and management of databases carried out in the field of Database Management in the Higher Vocational training Degree in Management of Computer Network Systems*
 
+
 &nbsp;
 <a name="technologies"></a>
 ### 2. Technologies
@@ -35,10 +36,10 @@ A list of technologies used within the project:
 <a name="collaboration"></a>
 ### 3. Collaboration
 ***
-Students:
-*Haplo35.* 
-*ErnestoPGH.* 
-*IrvingVqz.*
+*Students:* 
+- Haplo35. 
+- ErnestoPGH.
+- IrvingVqz.
 
 
 &nbsp;
@@ -49,48 +50,50 @@ Students:
 #### i. Create a new database called high-school with the following tables in the new database
 #
 📝 **TO DO:** 
-- 1.- Decide the appropriate name for each field, the most appropriate data type and whether it is mandatory that the field be informed or not.	   
-- 2.- Think about the order in which you will create the tables, keep in mind the restrictions. Define ALL possible constraints primary keys, foreign keys, etc.
+
+        1. Decide the appropriate name for each field, the most appropriate data type and whether it is mandatory that the field be informed or not.	   
+        2. Think about the order in which you will create the tables, keep in mind the restrictions. Define ALL possible constraints primary keys, foreign keys, etc.
 
 
 ⚠️ **WARNING:** 
 - All the operations must be done in the creation of the tables.
 
 
-**👀 Remember ot forget!**
+👀 **Remember ot forget!**
 - Properly format and document the code.
 
 
 &nbsp;
-
 <details>
     <summary>CLICK ME TO SEE THE TABLES DEFINITION</summary>
 
 <br />
 	
 *PETS_OWNERS*
-    - Owner IDENTIFIER
-    - Name 
-    - Surnames 
-    - Identity card 
-    - Telephone (Only one per each owner)
-    - Address
-    - City. The default value must be Edimburgh
-    - Post code
-    - Whether you are a member or not
-    - Number of dogs, can not be greater than 7
-    - Number of cats, can not be greater than 5
+	
+        - Owner IDENTIFIER
+        - Name 
+        - Surnames 
+        - Identity card 
+        - Telephone (Only one per each owner)
+        - Address
+        - City. The default value must be Edimburgh
+        - Post code
+        - Whether you are a member or not
+        - Number of dogs, can not be greater than 7
+        - Number of cats, can not be greater than 5
 		 
 		 
 *PETS*
-    - Identifier pet
-    - Name 
-    - Date of birth cannot be earlier than 01/01/2000),
-    - Type of animal. It can only be dogs or cats
-    - Breed 
-    - Whether it is a dangerous breed or not, by default they are not
-    - Monthly fee
-    - Owner of the animal
+
+	- Identifier pet
+        - Name 
+        - Date of birth cannot be earlier than 01/01/2000),
+        - Type of animal. It can only be dogs or cats
+        - Breed 
+        - Whether it is a dangerous breed or not, by default they are not
+        - Monthly fee
+        - Owner of the animal
 
 	
 **REMARKS:**
@@ -104,7 +107,8 @@ Students:
 #### ii. Recording data.
 #
 📝 **TO DO:**
-- Make the necessary changes to the structure of the DB or data in order to load the information into the tables.
+
+        1. Make the necessary changes to the structure of the DB or data in order to load the information into the tables.
 
 
 ⚠️ **WARNING:** 
@@ -170,7 +174,8 @@ Students:
 #
 
 📝 **TO DO:**
-- Create SQL scripts that allow you to obtain the following data from the created DB.
+
+        1. Create SQL scripts that allow you to obtain the following data from the created DB.
 
 
 👀 **Remember to not forget!**
@@ -184,25 +189,23 @@ Students:
      
 <br />
 	
-1. List the first and last names of cat owners.
-2. List the first and last names of cat owners in a single field.
-3. List the name and surname of cat owners in a single field, separated by 6 spaces. 
-4. List the name and surname of cat owners in a single field, separated by 6 spaces with no spaces either in front or behind.
-5. List the maximum number of dogs that cat owners have.
-6. Add the number of animals (cats and dogs) that owners who have cats or dogs have and take it out along with the name and surname of the owner.
-7. When was the youngest dog born? 
-8. What about the oldest cat?
-9. Bring out the age of all dogs.
-10. Capitalize the names of the dogs.
-11. Lowercase cat names.
-12. In the names of the owners change the letter a to the letter b.
-13. Replace the owners' surname Smith with Campbell.
-14. In the names of the animals look for the position of the first a after the 3 character. For example. Matilda returns me 7.
-15. How many years have passed between the oldest and youngest cat were born.
-16. Update the quota of dogs by increasing it by 1 euro to those who were born before January the first, 2018'.
-17. Update the date of birth of cats, adding 1 month.
-18. Delete Peque and update the number of cats owned bay the owner.
+        1. List the first and last names of cat owners.
+        2. List the first and last names of cat owners in a single field.
+        3. List the name and surname of cat owners in a single field, separated by 6 spaces. 
+        4. List the name and surname of cat owners in a single field, separated by 6 spaces with no spaces either in front or behind.
+        5. List the maximum number of dogs that cat owners have.
+        6. Add the number of animals (cats and dogs) that owners who have cats or dogs have and take it out along with the name and surname of the owner.
+        7. When was the youngest dog born? 
+        8. What about the oldest cat?
+        9. Bring out the age of all dogs.
+        10. Capitalize the names of the dogs.
+        11. Lowercase cat names.
+        12. In the names of the owners change the letter a to the letter b.
+        13. Replace the owners' surname Smith with Campbell.
+        14. In the names of the animals look for the position of the first a after the 3 character. For example. Matilda returns me 7.
+        15. How many years have passed between the oldest and youngest cat were born.
+        16. Update the quota of dogs by increasing it by 1 euro to those who were born before January the first, 2018'.
+        17. Update the date of birth of cats, adding 1 month.
+        18. Delete Peque and update the number of cats owned bay the owner.
 
 </details>
-
-
