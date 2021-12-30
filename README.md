@@ -11,8 +11,11 @@
 4. [Problem definition.](#problem-definition)
     1. [Creation of the tables of the DB.](#create)
     2. [Recording data.](#insert)
-    3. [Querying data.](#query)
-	
+    3. [Querying data 1.](#query1)
+    4. [Querying data 2.](#query2)
+    5. [Querying data 3.](#query3)
+    6. [Querying data 4.](#query4)
+    	
 
 &nbsp;
 <a name="general-info"></a>
@@ -103,6 +106,7 @@ A list of technologies used within the project:
 
 
 &nbsp;
+&nbsp;
 <a name="insert"></a>
 #### ii. Recording data.
 #
@@ -167,10 +171,10 @@ A list of technologies used within the project:
 </details>
 
 
-
 &nbsp;
-<a name="query"></a>  
-#### iii. Querying data.
+&nbsp;
+<a name="query1"></a>  
+#### iii. Querying data 1.
 #
 
 📝 **TO DO:**
@@ -207,5 +211,139 @@ A list of technologies used within the project:
         16. Update the quota of dogs by increasing it by 1 euro to those who were born before January the first, 2018'.
         17. Update the date of birth of cats, adding 1 month.
         18. Delete Peque and update the number of cats owned bay the owner.
+
+</details>
+
+
+&nbsp;
+&nbsp;
+<a name="query2"></a>  
+#### iv. Querying data 2.
+#
+
+📝 **TO DO:**
+
+        1. Create SQL scripts that allow you to obtain the following data from the created DB.
+
+
+👀 **Remember to not forget!**
+- Precede each script with a comment that corresponds to its statement
+- Properly format and document the code.		 
+
+&nbsp;
+
+<details>
+    <summary>CLICK ME TO SEE THE QUERIES</summary>
+     
+<br />
+	
+        1. Become a member of Tomás Valiente.
+        2. Increase the cat fee by 1 €.
+        3. Erase Bea García Lopez. What do you have to do before?
+        4. Subtract one day from the date of birth of dogs born after 01/01/2018.
+        5. List the date of birth of the youngest animal in the following format: Tue 18th August 2015.
+        6. List the name and date of birth of cats born in 2019. Do it in two ways.
+        7. List all the names of dangerous breed dogs. Give it the alias animales_peligrosos.
+        8. Shows the fee paid by cats truncated to 0 decimal places.
+        9. List the names of the owners whose name is 4 characters long.
+        10. Replace the surname Gomez with Gómez.
+        11. Calculate the years of the cats, showing the name in capital letters and the years they have.
+        12. Count how many animals have not defined whether or not they are dangerous.
+        13. Insert a pet with the following information:
+	
+        14. Insert a new duenio with the following data:
+        
+	15. List the names and date of birth of all animals in the pet table.
+        16. List all columns in the table owners.
+        17. List the name and date of birth of all cats in the table pets that were born before 01/01/2020.
+        18. List the name and whether or not owners who have dogs but do not have cats are partners. Put an alias to if they are partners or that is "es_socio".
+        19. List the names and surnames of the owners by capitalizing the names and lowercase the surnames of those who have an animal. Two ways.
+        20. List the names of the dogs and the fee they pay by rounding it to 1 decimal place.
+        21. List the names of the cats and the fee paid for them without any decimal value.
+        22. List the different cities of the owners. 
+        23. List the surnames of the owners sorted in descending order.
+        24. Returns the position of the first occurrence of the number 12 in the postal code of owners. Take out only those who are 12.
+        25. List the name of the animals and the fee they pay sorted first by name ascendingly and secondly the fee you pay descendingly.
+        26. Returns a list with the first 5 rows of the duenios table that has been sorted descendingly by name.
+        27. Return the following 4 pet names from the third.
+        28. List the name of the animal for which you pay the lowest fee and the fee you pay. (Uses only the ORDER BY and LIMIT clauses).
+        29. List the most expensive quota. (without using the ORDER BY and LIMIT clauses).
+        30. List the name of all dogs whose name begins with T.
+        31. List the name of all animals whose name contains the letter t.
+        32. List the name and quota of the dogs whose fees range from 10 to 50 €. Two ways.
+        33. List the name and quota of dogs that do not have a fee greater than or equal to € 40.  Do it in three different ways.
+        34. List all owners named Paco or Bea. Do it in two ways.
+        35. List the names of cats whose name is 5 characters long.
+        36. List the names of dangerous breed dogs.
+        37. List of Santander or Sevillian owners.
+        38. List the names of animals that have not been defined if they are of dangerous breed.
+        39. Inserts Teresa Rábano Verde, who is not a member of the veterinary clinic, into the duenios table. He has a Rottweiler, which is of dangerous breed, called Rufián. The Rottweiler was born on 12/07/2000 and pays for it a fee of € 43.23. Teresa, with DNI 12342345h, lives in Pez volador street, 1 of Madrid with zip code 28009. Leave the 698023410 as the contact telephone number.
+        40. Insert in the table pets a new cat, called Tintin that was born on 05/02/2003, that is not of breed and that pays 13.12 € of quota. The cat belongs to Jose Luis Bárcena Mayor, who lives on Calle Blanco, 14 in Santander with ZIP Code 37015. Your NIF is 3498740k and your phone 658765498. He has no more pets. José Luis has become a partner of the veterinary clinic.
+        41. Paco Martinez Soria has died a dog.
+        42. Return a list with the first 5 people who have the most animals in total. The name and number of total animals you have.
+        43. List the most expensive quota. (without using the ORDER BY and LIMIT clauses).
+
+</details>
+
+
+👀 **Remember to not forget!**
+- Precede each script with a comment that corresponds to its statement
+- Properly format and document the code.		 
+
+	
+	
+</details>
+
+
+&nbsp;
+&nbsp;
+<a name="query1"></a>  
+#### v. Querying data 3.
+#
+
+📝 **TO DO:**
+
+        1. Create SQL scripts that allow you to obtain the following data from the created DB.
+
+
+👀 **Remember to not forget!**
+- Precede each script with a comment that corresponds to its statement
+- Properly format and document the code.		 
+
+&nbsp;
+
+<details>
+    <summary>CLICK ME TO SEE THE QUERIES</summary>
+     
+<br />
+	
+        1. 
+	
+</details>
+
+
+&nbsp;
+&nbsp;
+<a name="query1"></a>  
+#### vi. Querying data 4.
+#
+
+📝 **TO DO:**
+
+        1. Create SQL scripts that allow you to obtain the following data from the created DB.
+
+
+👀 **Remember to not forget!**
+- Precede each script with a comment that corresponds to its statement
+- Properly format and document the code.		 
+
+&nbsp;
+
+<details>
+    <summary>CLICK ME TO SEE THE QUERIES</summary>
+     
+<br />
+	
+        1. 
 
 </details>
