@@ -5,11 +5,13 @@
     Author: Ana Polo  Arozamena                                      
 */
 
+
  DROP DATABASE IF EXISTS veterinary;
 
 
 CREATE DATABASE IF NOT EXISTS veterinary CHARACTER SET utf8mb4 COLLATE utf8mb4_spanish_ci;
 use veterinary;
+
 
 CREATE TABLE IF NOT EXISTS owners (
     id_owner VARCHAR( 3 ) NOT NULL,
@@ -32,6 +34,7 @@ CREATE TABLE IF NOT EXISTS owners (
     CONSTRAINT pk_owners PRIMARY KEY ( id_owner )
 ) ENGINE = InnoDB;		 
 		 
+         
 CREATE TABLE IF NOT EXISTS pets (
     id_pet CHAR( 3 ),
     pet_name VARCHAR( 10 ),
