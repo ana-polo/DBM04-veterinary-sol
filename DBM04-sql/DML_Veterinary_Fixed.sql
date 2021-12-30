@@ -9,8 +9,8 @@ USE veterinary;
 
 INSERT INTO owners ( id_owner, owner_name, surname, identity_card, telephone, address, city, post_code, member_clinic, number_of_dogs, number_of_cats )
     VALUES
-        ( '1', 'Bellatrix', 'Graham', '11111111h', '698765432', 'Cromwell Road', 'London', 'SW7 5BD', TRUE, 1, 1 ),
-		( '2', 'Thomas', 'Smith', '22222222l', '698345432', '4 Lochrin Square 96 Fountainbrigde', 'Edimburgh', 'EH3 9QA', FALSE, 2, 1 ),
+        ( '1', '  Bellatrix', 'Graham', '11111111h', '698765432', 'Cromwell Road', 'London', 'SW7 5BD', TRUE, 1, 1 ),
+		( '2', 'Thomas', 'Smith  ', '22222222l', '698345432', '4 Lochrin Square 96 Fountainbrigde', 'Edimburgh', 'EH3 9QA', FALSE, 2, 1 ),
 		( '3', 'Jack', 'Johnson', '33333333j', '654345432', '38 Thistle St', 'Edimburgh', 'EH2 1EN', FALSE, 0, 1 ),
 		( '4', ' Matthew', 'Williams', '44444444d', '654332345', '10 Princess Street', 'Edimburgh', 'EH2 2AN', FALSE, 2, 5 ),
 		( '5', 'Anna', 'Brown', '5555555p', '623235432', '2 Gulliver Street', 'London', 'SE6 7LT', FALSE, 4, 2 ),
