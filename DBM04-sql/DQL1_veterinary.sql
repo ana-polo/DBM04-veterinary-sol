@@ -146,7 +146,7 @@ LIMIT 1;
 
 /*  8. And what about the oldest cat? */
 
-    /*--- OPC 1: Using LIKE and without formating the date */
+    /*--- OPC 1: Using ORDER, LIKE and without formating the date */
 
 SELECT 
     pets.pet_name AS Name, pets.birth AS Birthday
@@ -158,7 +158,7 @@ ORDER BY birth ASC
 LIMIT 1;
 
 
-    /*--- OPC 2: Using = and a date format */
+    /*--- OPC 2: Using ORDER, = and a date format */
 
 SELECT 
     pets.pet_name AS Name, DATE_FORMAT( pets.birth, '%W the%D of %M,  %Y' ) AS Birthday
@@ -266,7 +266,9 @@ FROM
 /*  13. Replace the owners' surname 'Smith' with 'Winter'. */
 
 SELECT 
-    REPLACE( owners.surname, 'Smith', 'Winter' )
+    REPLACE( owners.surname,
+        'Smith',
+        'Winter' )
 FROM
     owners;
 
@@ -274,8 +276,15 @@ FROM
 
 /*  14. List the animals' names and the position of the first 'a' after the 3 character. For example: Matilda returns me 7. */
 
+/*
+**********************************
+algo no vas bien
+***********************************
+*/
+
 SELECT 
-    pets.pet_name AS Name, POSITION( 'a' IN pets.pet_name ) AS 'Position of a'
+    pets.pet_name AS Name,
+    POSITION( 'a' IN pets.pet_name ) AS 'Position of a'
 FROM
     pets;
 
@@ -283,10 +292,28 @@ FROM
 
 /*  15. How many years have passed between the oldest and youngest cat were born. */
 
+SELECT 
+    MAX(pets.birth) AS Maximo,
+    MIN(pets.birth) AS Minimo,
+    YEAR( MAX(pets.birth) ) - YEAR( MIN(pets.birth) ) AS Years
+FROM
+    pets;
+
 
 
 /*  16. Update the quota of dogs by increasing it by 1 euro to those who were born before January the first, 2018. */
 
+SELECT pets.monthly_fee
+FROM pets;
+
+UPDATE pets 
+SET 
+    pets.monthly_fee = pets.monthly_fee + 1.00
+WHERE
+    pets.birth < '2018-01-01';
+
+SELECT pets.monthly_fee
+FROM pets;
 
 
 /*  17. Update the date of birth of cats, adding 1 month. */
