@@ -274,17 +274,11 @@ FROM
 
 
 
-/*  14. List the animals' names and the position of the first 'a' after the 3 character. For example: Matilda returns me 7. */
-
-/*
-**********************************
-algo no vas bien
-***********************************
-*/
+/*  14. List the animals' names and the position of the first 'a' after the 3nd character. For example: Matilda returns me 7. */
 
 SELECT 
     pets.pet_name AS Name,
-    POSITION( 'a' IN pets.pet_name ) AS 'Position of a'
+    LOCATE( 'a', pets.pet_name, 3 ) AS 'Position of a after ther 3nd character'
 FROM
     pets;
 
@@ -303,8 +297,10 @@ FROM
 
 /*  16. Update the quota of dogs by increasing it by 1 euro to those who were born before January the first, 2018. */
 
-SELECT pets.monthly_fee
-FROM pets;
+SELECT 
+    pets.monthly_fee
+FROM
+    pets;
 
 UPDATE pets 
 SET 
@@ -312,12 +308,49 @@ SET
 WHERE
     pets.birth < '2018-01-01';
 
-SELECT pets.monthly_fee
-FROM pets;
+SELECT 
+    pets.monthly_fee
+FROM
+    pets;
 
 
 /*  17. Update the date of birth of cats, adding 1 month. */
 
+SELECT 
+    pets.birth
+FROM
+    pets
+WHERE
+    pets.animal LIKE 'cat';
+
+UPDATE pets 
+SET 
+    pets.birth = DATE_ADD( pets.birth, INTERVAL 1 MONTH )
+WHERE
+    pets.animal LIKE 'cat';
+
+SELECT 
+    pets.birth
+FROM
+    pets
+WHERE
+    pets.animal LIKE 'cat';
+
 
 
 /*  18. Delete Peque and update the number of cats owned by the owner. */
+
+UPDATE owners 
+SET 
+    owners.number_of_cats = owners.number_of_cats - 1
+WHERE
+    owners.id_owner LIKE ( SELECT 
+            pets.fk_id_owner
+        FROM
+            pets
+        WHERE
+            UCASE( pets.pet_name ) LIKE 'PEQUE' );
+
+DELETE FROM pets 
+WHERE
+    UPPER( pets.pet_name ) LIKE 'PEQUE';
