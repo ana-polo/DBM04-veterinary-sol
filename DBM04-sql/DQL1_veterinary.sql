@@ -17,6 +17,7 @@ WHERE
     owners.number_of_cats > 0;
 
 
+
 /*  2. List the first and last names of cat owners in a single field. */
 
 SELECT 
@@ -25,6 +26,7 @@ FROM
     owners
 WHERE
     owners.number_of_cats > 0;
+
 
 
 /*  3. List the name and surname of cat owners in a single field, separated by 6 spaces. */
@@ -53,6 +55,7 @@ WHERE
     owners.number_of_cats > 0;
 
 
+
 /*  4. List the name and surname of cat owners in a single field, separated by 6 spaces with no spaces either in front or behind. */
 
     /*--- OPC 1: USING RTRIM and LTRIM */
@@ -66,6 +69,7 @@ FROM
 WHERE
     owners.number_of_cats > 0;
 
+
     /*--- OPC 2: USING TRIM */
 
 SELECT 
@@ -78,6 +82,7 @@ WHERE
     owners.number_of_cats > 0;
 
 
+
 /*  5. List the number of dogs that cat owners have. */
 
 SELECT 
@@ -88,6 +93,7 @@ WHERE
     owners.number_of_cats > 0;
 
 
+
 /*  6. List the name, the surname and the total number of animals that each owner. */
 
 SELECT 
@@ -96,6 +102,7 @@ SELECT
     owners.number_of_dogs + owners.number_of_cats AS 'Total animals'
 FROM
     owners;
+
 
 
 /*  7. When was the youngest dog born? */
@@ -111,6 +118,7 @@ WHERE
 ORDER BY birth DESC
 LIMIT 1;
 
+
     /*--- OPC 2: Using LIKE and a date format */
 
 SELECT 
@@ -122,6 +130,7 @@ WHERE
 ORDER BY birth DESC
 LIMIT 1;
 
+
     /*--- OPC 3: Using LIKE with another date format */
 
 SELECT 
@@ -132,6 +141,7 @@ WHERE
     animal LIKE 'dog'
 ORDER BY birth DESC
 LIMIT 1;
+
 
 
 /*  8. And what about the oldest cat? */
@@ -147,6 +157,7 @@ WHERE
 ORDER BY birth ASC
 LIMIT 1;
 
+
     /*--- OPC 2: Using = and a date format */
 
 SELECT 
@@ -158,6 +169,7 @@ WHERE
 ORDER BY birth ASC
 LIMIT 1;
 
+
     /*--- OPC 3: Using LIKE with another date format */
 
 SELECT 
@@ -168,6 +180,7 @@ WHERE
     animal LIKE 'cat'
 ORDER BY birth ASC
 LIMIT 1;
+
 
 
 /*  9. List the age of each dogs and its name. */
@@ -194,6 +207,7 @@ WHERE
     animal LIKE 'dog';
 
 
+
 /*  10. List the names of the dogs in capital letters. */
 
    /*--- OPC 1: Using UPPER() */
@@ -216,6 +230,7 @@ WHERE
     animal LIKE 'dog';
 
 
+
 /*  11. List the cat names in lowercase. */
 
    /*--- OPC 1: Using LOWER() */
@@ -227,6 +242,7 @@ FROM
 WHERE
     animal LIKE 'cat';
 
+
    /*--- OPC 2: Using LCASE() */
 
 SELECT 
@@ -237,12 +253,14 @@ WHERE
     animal LIKE 'cat';
 
 
+
 /*  12. List the names of the owners changing the letter 'a' to the letter 'b'. */
 
 SELECT 
     REPLACE( owners.owner_name, 'a', 'b' )
 FROM
     owners;
+
 
 
 /*  13. Replace the owners' surname 'Smith' with 'Winter'. */
@@ -253,6 +271,7 @@ FROM
     owners;
 
 
+
 /*  14. List the animals' names and the position of the first 'a' after the 3 character. For example: Matilda returns me 7. */
 
 SELECT 
@@ -261,7 +280,17 @@ FROM
     pets;
 
 
+
 /*  15. How many years have passed between the oldest and youngest cat were born. */
+
+
+
 /*  16. Update the quota of dogs by increasing it by 1 euro to those who were born before January the first, 2018. */
+
+
+
 /*  17. Update the date of birth of cats, adding 1 month. */
+
+
+
 /*  18. Delete Peque and update the number of cats owned by the owner. */
