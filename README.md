@@ -55,7 +55,7 @@ Students:
 
         1. Decide the appropriate name for each field, the most appropriate data type and whether it is mandatory that the field be informed or not.   
         2. Think about the order in which you will create the tables, keep in mind the restrictions. Define ALL possible constraints primary keys, foreign keys, etc.
-        3. Save all the orders that you need in the file whose name is **DDL-veterinary.sql** inside the **DBM04-SQL** directory.
+        3. Save all the orders that you need in the file whose name is **DDL_veterinary.sql** inside the **DBM04-SQL** directory.
 
 
 
@@ -114,7 +114,7 @@ Students:
 📝 **TO DO:**
 
         1. Make the necessary changes to the structure of the DB or data in order to load the information into the tables.
-        2. Save all the orders that you need in the file whose name is **DML-veterinary.sql** inside the **DBM04-SQL** directory.
+        2. Save all the orders that you need in the file whose name is **DML_veterinary.sql** inside the **DBM04-SQL** directory.
 
 
 ⚠️ **WARNING:** 
@@ -182,7 +182,7 @@ Students:
 📝 **TO DO:**
 
         1. Create SQL scripts that allow you to obtain the following data from the created DB.
-        2. Save all the orders that you need in the file whose name is **DQL-01-veterinary.sql** inside the **DBM04-SQL** directory.
+        2. Save all the orders that you need in the file whose name is **DQL01_veterinary.sql** inside the **DBM04-SQL** directory.
 
 
 👀 **Remember to not forget!**
@@ -227,7 +227,7 @@ Students:
 📝 **TO DO:**
 
         1. Create SQL scripts that allow you to obtain the following data from the created DB.
-        2. Save all the orders that you need in the file whose name is **DQL-02-veterinary.sql** inside the **DBM04-SQL** directory.
+        2. Save all the orders that you need in the file whose name is **DQL02_veterinary.sql** inside the **DBM04-SQL** directory.
 
 
 👀 **Remember to not forget!**
@@ -299,7 +299,7 @@ Students:
 📝 **TO DO:**
 
         1. Create SQL scripts that allow you to obtain the following data from the created DB.
-        2. Save all the orders that you need in the file whose name is **DQL-03-veterinary.sql** inside the **DBM04-SQL** directory.
+        2. Save all the orders that you need in the file whose name is **DQL03_veterinary.sql** inside the **DBM04-SQL** directory.
 
 
 👀 **Remember to not forget!**
