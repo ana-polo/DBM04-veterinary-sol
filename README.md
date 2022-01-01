@@ -28,20 +28,20 @@
 ### 2. Technologies
 ***
 A list of technologies used within the project:
-*MySQL: Version 8.0 
-    - SQL-DDL: Data Definition Language 
-    - SQL-DDL: Data Definition Language
-    - SQL-DQL: Data Query Language* 
+*MySQL: Version 8.0*
+    - SQL-DDL: Data Definition Language.
+    - SQL-DDL: Data Definition Language.
+    - SQL-DQL: Data Query Language.
 
 
 &nbsp;
 <a name="collaboration"></a>
 ### 3. Collaboration
 ***
-*Students:* 
-- Haplo35. 
-- ErnestoPGH.
-- IrvingVqz.
+Students:
+- *Haplo35.*
+- *ErnestoPGH.*
+- *IrvingVqz.*
 
 
 &nbsp;
@@ -53,11 +53,13 @@ A list of technologies used within the project:
 #
 📝 **TO DO:** 
 
-        1. Decide the appropriate name for each field, the most appropriate data type and whether it is mandatory that the field be informed or not.	   
+        1. Decide the appropriate name for each field, the most appropriate data type and whether it is mandatory that the field be informed or not.   
         2. Think about the order in which you will create the tables, keep in mind the restrictions. Define ALL possible constraints primary keys, foreign keys, etc.
+        3. Save all the orders that you need in the file whose name is **DDL-veterinary.sql** inside the **DBM04-SQL** directory.
 
 
-⚠️ **WARNING:** 
+
+⚠️ **WARNING:**
 - All the operations must be done in the creation of the tables.
 
 
@@ -112,6 +114,7 @@ A list of technologies used within the project:
 📝 **TO DO:**
 
         1. Make the necessary changes to the structure of the DB or data in order to load the information into the tables.
+        2. Save all the orders that you need in the file whose name is **DML-veterinary.sql** inside the **DBM04-SQL** directory.
 
 
 ⚠️ **WARNING:** 
@@ -129,16 +132,16 @@ A list of technologies used within the project:
 <br />	
 *PETS_OWNER*
 	
-     1 ;   Bellatrix  ; Graham   ; 11111111h ; 698765432 ; Cromwell Road                      ; London    ; SW7 5BD ; TRUE  ; 1 ; 1 
-     2 ; Thomas     ; Smith      ; 22222222l ; 698345432 ; 4 Lochrin Square 96 Fountainbrigde ; Edimburgh ; EH3 9QA ; FALSE ; 2 ; 1 
-     3 ; Jack       ; Johnson  ; 33333333j ; 654345432 ; 38 Thistle St                      ; Edimburgh ; EH2 1EN ; FALSE ; 0 ; 1 
-     4 ;  Matthew   ; Williams ; 44444444d ; 654332345 ; 10 Princess Street                 ; Edimburgh ; EH2 2AN ; FALSE ; 2 ; 5 
-     5 ; Anna       ; Brown    ; 5555555p  ; 623235432 ; 2 Gulliver Street                  ; London    ; SE6 7LT ; FALSE ; 4 ; 2 
-     6 ; Sofia      ; Jones    ; 66666666u ; 665456789 ; 12 Coates Place                    ; Edimburgh ; EH3 7AA ; TRUE  ; 1 ; 0 
-     7 ; Matthew    ; Taylor   ; 77777777b ; 634562343 ; 17 Southgate Place                 ; Bath      ; BA1 1AP ; FALSE ; 1 ; 0 
-     8 ; Bellatrix  ; Rae      ; 88888888d ; 698786543 ; 1 Ness Walk                        ; Inverness ; IV3 5TE ; FALSE ; 0 ; 3 
-     9 ; Theresa    ; Harper   ; 99999999j ; 698765438 ; Drumsheugh Garden                  ; Edimburgh ; EH3 7RN ; TRUE  ; 1 ; 1 
-    10 ; Nathaniel ; Campbell ; 12123432u ; 690987640 ; Leith Street                        ; Edimburgh ; EH1 3SP ; FALSE ; 0 ; 1 
+     1 ;   Bellatrix  ; Graham   ; 11111111h ; 698765432 ; Cromwell Road                        ; London    ; SW7 5BD ; TRUE  ; 1 ; 1 
+     2 ; Thomas       ; Smith      ; 22222222l ; 698345432 ; 4 Lochrin Square 96 Fountainbrigde ; Edimburgh ; EH3 9QA ; FALSE ; 2 ; 1 
+     3 ; Jack         ; Johnson  ; 33333333j ; 654345432 ; 38 Thistle St                        ; Edimburgh ; EH2 1EN ; FALSE ; 0 ; 1 
+     4 ;  Matthew     ; Williams ; 44444444d ; 654332345 ; 10 Princess Street                   ; Edimburgh ; EH2 2AN ; FALSE ; 2 ; 5 
+     5 ; Anna         ; Brown    ; 5555555p  ; 623235432 ; 2 Gulliver Street                    ; London    ; SE6 7LT ; FALSE ; 4 ; 2 
+     6 ; Sofia        ; Jones    ; 66666666u ; 665456789 ; 12 Coates Place                      ; Edimburgh ; EH3 7AA ; TRUE  ; 1 ; 0 
+     7 ; Matthew      ; Taylor   ; 77777777b ; 634562343 ; 17 Southgate Place                   ; Bath      ; BA1 1AP ; FALSE ; 1 ; 0 
+     8 ; Bellatrix    ; Rae      ; 88888888d ; 698786543 ; 1 Ness Walk                          ; Inverness ; IV3 5TE ; FALSE ; 0 ; 3 
+     9 ; Theresa      ; Harper   ; 99999999j ; 698765438 ; Drumsheugh Garden                    ; Edimburgh ; EH3 7RN ; TRUE  ; 1 ; 1 
+    10 ; Nathaniel    ; Campbell ; 12123432u ; 690987640 ; Leith Street                         ; Edimburgh ; EH1 3SP ; FALSE ; 0 ; 1 
 
 
 *PETS*
@@ -179,11 +182,12 @@ A list of technologies used within the project:
 📝 **TO DO:**
 
         1. Create SQL scripts that allow you to obtain the following data from the created DB.
+        2. Save all the orders that you need in the file whose name is **DQL-01-veterinary.sql** inside the **DBM04-SQL** directory.
 
 
 👀 **Remember to not forget!**
-- Precede each script with a comment that corresponds to its statement
-- Properly format and document the code.		 
+- Precede each script with a comment that corresponds to its statement.
+- Properly format and document the code.
 
 &nbsp;
 
@@ -223,11 +227,12 @@ A list of technologies used within the project:
 📝 **TO DO:**
 
         1. Create SQL scripts that allow you to obtain the following data from the created DB.
+        2. Save all the orders that you need in the file whose name is **DQL-02-veterinary.sql** inside the **DBM04-SQL** directory.
 
 
 👀 **Remember to not forget!**
-- Precede each script with a comment that corresponds to its statement
-- Properly format and document the code.		 
+- Precede each script with a comment that corresponds to its statement.
+- Properly format and document the code.
 
 &nbsp;
 
@@ -294,11 +299,12 @@ A list of technologies used within the project:
 📝 **TO DO:**
 
         1. Create SQL scripts that allow you to obtain the following data from the created DB.
+        2. Save all the orders that you need in the file whose name is **DQL-03-veterinary.sql** inside the **DBM04-SQL** directory.
 
 
 👀 **Remember to not forget!**
 - Precede each script with a comment that corresponds to its statement
-- Properly format and document the code.		 
+- Properly format and document the code.
 
 &nbsp;
 
