@@ -82,28 +82,28 @@ Students:
  
 *PETS_OWNERS*
  
-        - Owner IDENTIFIER
-        - Name 
-        - Surnames 
-        - Identity card 
-        - Telephone (Only one per each owner)
-        - Address
-        - City. The default value must be Edimburgh
-        - Post code
-        - Whether you are a member or not
-        - Number of dogs, can not be greater than 7
-        - Number of cats, can not be greater than 5
+        -  Owner IDENTIFIER
+        -  Name 
+        -  Surnames 
+        -  Identity card 
+        -  Telephone (Only one per each owner)
+        -  Address
+        -  City. The default value must be Edimburgh
+        -  Post code
+        -  Whether you are a member or not
+        -  Number of dogs, can not be greater than 7
+        -  Number of cats, can not be greater than 5
    
 *PETS*
 
  - Identifier pet
-        - Name 
-        - Date of birth cannot be earlier than 01/01/2000),
-        - Type of animal. It can only be dogs or cats
-        - Breed 
-        - Whether it is a dangerous breed or not, by default they are not
-        - Monthly fee
-        - Owner of the animal
+        -  Name 
+        -  Date of birth cannot be earlier than 01/01/2000),
+        -  Type of animal. It can only be dogs or cats
+        -  Breed 
+        -  Whether it is a dangerous breed or not, by default they are not
+        -  Monthly fee
+        -  Owner of the animal
 
 **REMARKS:**
 
