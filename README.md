@@ -2,9 +2,10 @@
 
 ![Logo de Team](https://github.com/ana-polo/DBM04-veterinary-sol/blob/main/DBM.gif "Team logo")
 
-
 <a name="top"></a>
+
 ## Table of Contents
+
 1. [General Info.](#general-info)
 2. [Technologies.](#technologies)
 3. [Collaboration.](#collaboration)
@@ -14,18 +15,20 @@
     3. [Querying data 1.](#query1)
     4. [Querying data 2.](#query2)
     5. [Querying data 3.](#query3)
-    	
-
+     
 &nbsp;
 <a name="general-info"></a>
+
 ### 1. General Info
+
 ***
 *Training exercise of design and management of databases carried out in the field of Database Management in the Higher Vocational training Degree in Management of Computer Network Systems*
 
-
 &nbsp;
 <a name="technologies"></a>
+
 ### 2. Technologies
+
 ***
 A list of technologies used within the project:
 *MySQL: Version 8.0*
@@ -33,48 +36,52 @@ A list of technologies used within the project:
     - SQL-DDL: Data Definition Language.
     - SQL-DQL: Data Query Language.
 
-
 &nbsp;
 <a name="collaboration"></a>
+
 ### 3. Collaboration
+
 ***
 Students:
+
 - *Haplo35.*
 - *ErnestoPGH.*
 - *IrvingVqz.*
 
-
 &nbsp;
 <a name="problem-definition"></a>
+
 ### 4. Problem definition
+
 ***
 <a name="create"></a>
+
 #### i. Create a new database called high-school with the following tables in the new database
+
 #
-📝 **TO DO:** 
+
+📝 **TO DO:**
 
         1. Decide the appropriate name for each field, the most appropriate data type and whether it is mandatory that the field be informed or not.   
         2. Think about the order in which you will create the tables, keep in mind the restrictions. Define ALL possible constraints primary keys, foreign keys, etc.
         3. Save all the orders that you need in the file whose name is **DDL_veterinary.sql** inside the **DBM04-SQL** directory.
 
-
-
 ⚠️ **WARNING:**
+
 - All the operations must be done in the creation of the tables.
 
-
 👀 **Remember ot forget!**
-- Properly format and document the code.
 
+- Properly format and document the code.
 
 &nbsp;
 <details>
     <summary>CLICK ME TO SEE THE TABLES DEFINITION</summary>
 
 <br />
-	
+ 
 *PETS_OWNERS*
-	
+ 
         - Owner IDENTIFIER
         - Name 
         - Surnames 
@@ -86,11 +93,10 @@ Students:
         - Whether you are a member or not
         - Number of dogs, can not be greater than 7
         - Number of cats, can not be greater than 5
-		 
-		 
+   
 *PETS*
 
-	- Identifier pet
+ - Identifier pet
         - Name 
         - Date of birth cannot be earlier than 01/01/2000),
         - Type of animal. It can only be dogs or cats
@@ -99,39 +105,40 @@ Students:
         - Monthly fee
         - Owner of the animal
 
-	
 **REMARKS:**
+
 - Keep in mind that there can be no owner who does not have any animal.
 
 </details>
 
-
 &nbsp;
 &nbsp;
 <a name="insert"></a>
-#### ii. Recording data.
+
+#### ii. Recording data
+
 #
+
 📝 **TO DO:**
 
         1. Make the necessary changes to the structure of the DB or data in order to load the information into the tables.
         2. Save all the orders that you need in the file whose name is **DML_veterinary.sql** inside the **DBM04-SQL** directory.
 
+⚠️ **WARNING:**
 
-⚠️ **WARNING:** 
 - The operations CAN NOT be done in the creation of the tables.
 
-
 👀 **Remember to not forget!**
-- Properly format and document the code.		 
 
- 
+- Properly format and document the code.   
+
 &nbsp;
 <details>
     <summary>CLICK ME TO SEE THE DATA</summary>
-     
-<br />	
+
+<br /> 
 *PETS_OWNER*
-	
+ 
      1 ;   Bellatrix  ; Graham   ; 11111111h ; 698765432 ; Cromwell Road                        ; London    ; SW7 5BD ; TRUE  ; 1 ; 1 
      2 ; Thomas       ; Smith      ; 22222222l ; 698345432 ; 4 Lochrin Square 96 Fountainbrigde ; Edimburgh ; EH3 9QA ; FALSE ; 2 ; 1 
      3 ; Jack         ; Johnson  ; 33333333j ; 654345432 ; 38 Thistle St                        ; Edimburgh ; EH2 1EN ; FALSE ; 0 ; 1 
@@ -143,9 +150,8 @@ Students:
      9 ; Theresa      ; Harper   ; 99999999j ; 698765438 ; Drumsheugh Garden                    ; Edimburgh ; EH3 7RN ; TRUE  ; 1 ; 1 
     10 ; Nathaniel    ; Campbell ; 12123432u ; 690987640 ; Leith Street                         ; Edimburgh ; EH1 3SP ; FALSE ; 0 ; 1 
 
-
 *PETS*
-	
+ 
     101 ; Mati    ; 02/05/2013 ; dog ; mongrel          ; 'FALSE' ; 20.5 ; 1
     102 ; Little  ; 01/06/2019 ; cat ; siamese          ;  NULL   ; 30.5 ; 1
     103 ; Idefix  ;  5/02/1999 ; dog ; cocker           ;  NULL   ; 20.5 ; 2
@@ -172,11 +178,12 @@ Students:
 
 </details>
 
-
 &nbsp;
 &nbsp;
 <a name="query1"></a>  
-#### iii. Querying data 1.
+
+#### iii. Querying data 1
+
 #
 
 📝 **TO DO:**
@@ -184,8 +191,8 @@ Students:
         1. Create SQL scripts that allow you to obtain the following data from the created DB.
         2. Save all the orders that you need in the file whose name is **DQL01_veterinary.sql** inside the **DBM04-SQL** directory.
 
-
 👀 **Remember to not forget!**
+
 - Precede each script with a comment that corresponds to its statement.
 - Properly format and document the code.
 
@@ -193,9 +200,9 @@ Students:
 
 <details>
     <summary>CLICK ME TO SEE THE QUERIES</summary>
-     
+
 <br />
-	
+ 
         1. List the cat owners' names and surnames.
         2. List the cat owners' name and surname all in a single field.
         3. List the cat owners' name and surname in a single field, separated by 6 spaces. 
@@ -217,11 +224,12 @@ Students:
 
 </details>
 
-
 &nbsp;
 &nbsp;
 <a name="query2"></a>  
-#### iv. Querying data 2.
+
+#### iv. Querying data 2
+
 #
 
 📝 **TO DO:**
@@ -229,8 +237,8 @@ Students:
         1. Create SQL scripts that allow you to obtain the following data from the created DB.
         2. Save all the orders that you need in the file whose name is **DQL02_veterinary.sql** inside the **DBM04-SQL** directory.
 
-
 👀 **Remember to not forget!**
+
 - Precede each script with a comment that corresponds to its statement.
 - Properly format and document the code.
 
@@ -238,9 +246,9 @@ Students:
 
 <details>
     <summary>CLICK ME TO SEE THE QUERIES</summary>
-     
+
 <br />
-	
+ 
         1. Become a member of Tomás Valiente.
         2. Increase the cat fee by 1 €.
         3. Erase Bea García Lopez. What do you have to do before?
@@ -254,10 +262,10 @@ Students:
         11. Calculate the years of the cats, showing the name in capital letters and the years they have.
         12. Count how many animals have not defined whether or not they are dangerous.
         13. Insert a pet with the following information:
-	
+ 
         14. Insert a new duenio with the following data:
         
-	15. List the names and date of birth of all animals in the pet table.
+ 15. List the names and date of birth of all animals in the pet table.
         16. List all columns in the table owners.
         17. List the name and date of birth of all cats in the table pets that were born before 01/01/2020.
         18. List the name and whether or not owners who have dogs but do not have cats are partners. Put an alias to if they are partners or that is "es_socio".
@@ -289,11 +297,12 @@ Students:
 
 </details>
 
-
 &nbsp;
 &nbsp;
 <a name="query3"></a>  
-#### v. Querying data 3.
+
+#### v. Querying data 3
+
 #
 
 📝 **TO DO:**
@@ -301,8 +310,8 @@ Students:
         1. Create SQL scripts that allow you to obtain the following data from the created DB.
         2. Save all the orders that you need in the file whose name is **DQL03_veterinary.sql** inside the **DBM04-SQL** directory.
 
-
 👀 **Remember to not forget!**
+
 - Precede each script with a comment that corresponds to its statement
 - Properly format and document the code.
 
@@ -310,9 +319,9 @@ Students:
 
 <details>
     <summary>CLICK ME TO SEE THE QUERIES</summary>
-     
+
 <br />
-	
+ 
         1. Insert a new owner.
         2. Insert a pet to that owner.
         3. List the first name along with the last names in one field and the number of animals they have in another field, all dog owners. The first and last names will be displayed without whites either to the right of surnames or to the left of the first name.
@@ -340,5 +349,4 @@ Students:
         24. List the cheapest fee. Do it in two ways.
         25. List the name and date of birth of the 3 oldest cats. 
 
-	
 </details>
