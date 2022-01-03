@@ -8,11 +8,15 @@
 2. Technologies.
 3. Collaboration.
 4. Problem definition.
-    1. Creation of the tables of the DB.
-    2. Recording data.
-    3. Querying data 1.
-    4. Querying data 2.
-    5. Querying data 3.
+
+    1. DDL.
+    2. DML.
+    3. DQL.
+        
+        1. Querying data 1.
+        2. Querying data 2.
+        3. Querying data 3.
+        4. Querying data 4.
 
 &nbsp;
 
