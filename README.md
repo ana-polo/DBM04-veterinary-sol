@@ -76,7 +76,7 @@ Training exercise of design and management of databases carried out in the field
 
 &nbsp;
 
-👀 **Remember ot forget!**
+👀 **Remember not forget!**
 
 - Properly format and document the code.
 
@@ -224,18 +224,18 @@ Training exercise of design and management of databases carried out in the field
     1. List all the owners (name and surname) from London.
     2. List all the owners that are not from London.
     3. Show all the data for the owner 1.
-    4. Show Bellatrix Rae's phone.
+    4. Show Anna Brawn's phone.
     5. List the data for the owners whose identifier is over than 4.
     6. Show the type of animal Mati is. 
     7. List the data for all the parners
-    8. Show the surneme and telephone number for the owner whose nif is 88888888d.
+    8. Show the surneme and telephone number for the owner whose nif is 99999999j.
     9. How many animals owns the owner 1?
     10. List the pet's name for all pets that are not a dangerous breed. 
     11. List all record for the pets that are born in 2013.
     12. List all dog's name.
-    13. List the dogs owners' name thar are partners from Edimburgh.
-    14. List the records for the pets that are owned by the owner who has the identifier 9.
-    15. List all record for the unknown breed pets.
+    13. List the dogs owners' name that are partners from Edimburgh.
+    14. List the records for the pets that are owned by the owner 9.
+    15. List all record for the unknown breed pets (mongrel).
     16. List the name and the anual fee for each dog.
 
 </details>

@@ -1,5 +1,5 @@
 /*/*
-    File: DQL02_veterinary.sql 
+    File: DQL04_veterinary.sql 
     Purpose: DBM SQL DML Exercice 04- Queries that allow to obtain the following data from the veterinary database.
     Written: 10/12/2021
     Author: Ana Polo Arozamena
