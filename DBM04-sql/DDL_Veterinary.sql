@@ -41,7 +41,7 @@ CREATE TABLE IF NOT EXISTS pets (
     birth DATE CHECK ( birth >= '2000-01-01' ),
     animal ENUM( 'dog', 'cat' ),
     breed VARCHAR( 20 ) NOT NULL,
-    dangerous_breed BOOLEAN NOT NULL DEFAULT 0,
+    dangerous_breed BOOLEAN,
     monthly_fee DECIMAL( 5, 2 ),
     fk_id_owner VARCHAR( 3 ),
 

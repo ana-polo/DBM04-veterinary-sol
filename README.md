@@ -97,7 +97,7 @@ Training exercise of design and management of databases carried out in the field
     -  Address
     -  City. The default value must be Edimburgh
     -  Post code
-    -  Whether you are a member or not
+    -  Whether you are a member or not, by default they are not
     -  Number of dogs, can not be greater than 7
     -  Number of cats, can not be greater than 5
 
@@ -108,7 +108,7 @@ Training exercise of design and management of databases carried out in the field
     -  Date of birth cannot be earlier than 01/01/2000),
     -  Type of animal. It can only be dogs or cats
     -  Breed
-    -  Whether it is a dangerous breed or not, by default they are not
+    -  Whether it is a dangerous breed or not.
     -  Monthly fee
     -  Owner of the animal
 
@@ -155,14 +155,14 @@ Training exercise of design and management of databases carried out in the field
 ##### PETS_OWNERS
 
      1 ;   Bellatrix  ; Graham   ; 11111111h ; 698765432 ; Cromwell Road                        ; London    ; SW7 5BD ; TRUE  ; 1 ; 1 
-     2 ; Thomas       ; Smith      ; 22222222l ; 698345432 ; 4 Lochrin Square 96 Fountainbrigde ; Edimburgh ; EH3 9QA ; FALSE ; 2 ; 1 
+     2 ; Thomas       ; Smith    ; 22222222l ; 698345432 ; 4 Lochrin Square 96 Fountainbrigde   ; Edimburgh ; EH3 9QA ; FALSE ; 2 ; 1 
      3 ; Jack         ; Johnson  ; 33333333j ; 654345432 ; 38 Thistle St                        ; Edimburgh ; EH2 1EN ; FALSE ; 0 ; 1 
      4 ;  Matthew     ; Williams ; 44444444d ; 654332345 ; 10 Princess Street                   ; Edimburgh ; EH2 2AN ; FALSE ; 2 ; 5 
      5 ; Anna         ; Brown    ; 5555555p  ; 623235432 ; 2 Gulliver Street                    ; London    ; SE6 7LT ; FALSE ; 4 ; 2 
      6 ; Sofia        ; Jones    ; 66666666u ; 665456789 ; 12 Coates Place                      ; Edimburgh ; EH3 7AA ; TRUE  ; 1 ; 0 
      7 ; Matthew      ; Taylor   ; 77777777b ; 634562343 ; 17 Southgate Place                   ; Bath      ; BA1 1AP ; FALSE ; 1 ; 0 
      8 ; Bellatrix    ; Rae      ; 88888888d ; 698786543 ; 1 Ness Walk                          ; Inverness ; IV3 5TE ; FALSE ; 0 ; 3 
-     9 ; Theresa      ; Harper   ; 99999999j ; 698765438 ; Drumsheugh Garden                    ; Edimburgh ; EH3 7RN ; TRUE  ; 1 ; 1 
+     9 ;    Theresa   ; Harper   ; 99999999j ; 698765438 ; Drumsheugh Garden                    ; Edimburgh ; EH3 7RN ; TRUE  ; 1 ; 1 
     10 ; Nathaniel    ; Campbell ; 12123432u ; 690987640 ; Leith Street                         ; Edimburgh ; EH1 3SP ; FALSE ; 0 ; 1 
 
 ##### PETS
@@ -214,10 +214,72 @@ Training exercise of design and management of databases carried out in the field
 
 &nbsp;
 
-##### a. DQL01
+##### a. DQL01: Simple queries
 
 <details>
     <summary>&nbsp;&nbsp;&nbsp;&nbsp;CLICK ME TO SEE THE QUERIES 01</summary>
+
+&nbsp;
+
+    1. List all the owners (name and surname) from London.
+    2. List all the owners that are not from London.
+    3. Show all the data for the owner 1.
+    4. Show Bellatrix Rae's phone.
+    5. List the data for the owners whose identifier is over than 4.
+    6. Show the type of animal Mati is. 
+    7. List the data for all the parners
+    8. Show the surneme and telephone number for the owner whose nif is 88888888d.
+    9. How many animals owns the owner 1?
+    10. List the pet's name for all pets that are not a dangerous breed. 
+    11. List all record for the pets that are born in 2013.
+    12. List all dog's name.
+    13. List the dogs owners' name thar are partners from Edimburgh.
+    14. List the records for the pets that are owned by the owner who has the identifier 9.
+    15. List all record for the unknown breed pets.
+    16. List the name and the anual fee for each dog.
+
+</details>
+
+&nbsp;
+&nbsp;
+
+##### b. DQL02
+
+<details>
+    <summary>&nbsp;&nbsp;&nbsp;&nbsp;CLICK ME TO SEE THE QUERIES 02</summary>
+
+&nbsp;
+
+    1. List the name, the anual fee, the anual fee round with one decimal, the anual fee truqued without decimals for all pets.
+    2. List the daily fee (think that all month has 30 days) for all pets, show each quantity round with 3 decimals an trunced with 3 decimals too.
+    3. List all records for pets that are born in march, 2019.
+    4. List the records for the dangerous dogs that are owned by the owner 5.
+    5. List the record for the pets that have no informed the dangerous field.
+    6. List the record for the dangerous dogs whose monthly fee is more than 20 euros. 
+    7. List the cat owners' name and surname.
+    8. List the pet owners' name and surname who have more dogs than cats. 
+    9. List the partner's record who have more cats than dogs.
+    10. List the pet owners' name and surname who are not pertners and that have more cats than dogs.
+    11. What do these comands do ?
+
+        *SELECT*
+            *SUM( number_of_cats )*
+        *FROM* 
+            *owners*;
+
+    12. How many owners ares fron United Kindown ?
+    13. Show the total number of cats, the total number of dogs and the total number of pets there are.
+    14. How many partners have any cat?
+
+</details>
+
+&nbsp;
+&nbsp;
+
+##### c. DQL03
+
+<details>
+    <summary>&nbsp;&nbsp;&nbsp;&nbsp;CLICK ME TO SEE THE QUERIES 03</summary>
 
 &nbsp;
 
@@ -245,77 +307,6 @@ Training exercise of design and management of databases carried out in the field
 &nbsp;
 &nbsp;
 
-##### b. DQL02
-
-<details>
-    <summary>&nbsp;&nbsp;&nbsp;&nbsp;CLICK ME TO SEE THE QUERIES 02</summary>
-
-&nbsp;
-
-    1. Become a member of Tomás Valiente.
-    2. Increase the cat fee by 1 €.
-    3. Erase Bea García Lopez. What do you have to do before?
-    4. Subtract one day from the date of birth of dogs born after 01/01/2018.
-    5. List the date of birth of the youngest animal in the following format: Tue 18th August 2015.
-    6. List the name and date of birth of cats born in 2019. Do it in two ways.
-    7. List all the names of dangerous breed dogs. Give it the alias animales_peligrosos.
-    8. Shows the fee paid by cats truncated to 0 decimal places.
-    9. List the names of the owners whose name is 4 characters long.
-    10. Replace the surname Gomez with Gómez.
-    11. Calculate the years of the cats, showing the name in capital letters and the years they have.
-    12. Count how many animals have not defined whether or not they are dangerous.
-    13. Insert a pet with the following information:
- 
-    14. Insert a new duenio with the following data:
-
-    15. List the names and date of birth of all animals in the pet table.
-    16. List all columns in the table owners.
-    17. List the name and date of birth of all cats in the table pets that were born before 01/01/2020.
-    18. List the name and whether or not owners who have dogs but do not have cats are partners. Put an alias to if they are partners or that is "es_socio".
-    19. List the names and surnames of the owners by capitalizing the names and lowercase the surnames of those who have an animal. Two ways.
-    20. List the names of the dogs and the fee they pay by rounding it to 1 decimal place.
-
-</details>
-
-&nbsp;
-&nbsp;
-
-##### c. DQL03
-
-<details>
-    <summary>&nbsp;&nbsp;&nbsp;&nbsp;CLICK ME TO SEE THE QUERIES 03</summary>
-
-&nbsp;
-
-    1. List the names of the cats and the fee paid for them without any decimal value.
-    2. List the different cities of the owners.
-    3. List the surnames of the owners sorted in descending order.
-    4. Returns the position of the first occurrence of the number 12 in the postal code of owners. Take out only those who are 12.
-    5. List the name of the animals and the fee they pay sorted first by name ascendingly and secondly the fee you pay descendingly.
-    6. Returns a list with the first 5 rows of the duenios table that has been sorted descendingly by name.
-    7. Return the following 4 pet names from the third.
-    8. List the name of the animal for which you pay the lowest fee and the fee you pay. (Uses only the ORDER BY and LIMIT clauses).
-    9. List the most expensive quota. (without using the ORDER BY and LIMIT clauses).
-    10. List the name of all dogs whose name begins with T.
-    11. List the name of all animals whose name contains the letter t.
-    12. List the name and quota of the dogs whose fees range from 10 to 50 €. Two ways.
-    13. List the name and quota of dogs that do not have a fee greater than or equal to € 40.  Do it in three different ways.
-    14. List all owners named Paco or Bea. Do it in two ways.
-    15. List the names of cats whose name is 5 characters long.
-    16. List the names of dangerous breed dogs.
-    17. List of Santander or Sevillian owners.
-    18. List the names of animals that have not been defined if they are of dangerous breed.
-    19. Inserts Teresa Rábano Verde, who is not a member of the veterinary clinic, into the duenios table. He has a Rottweiler, which is of dangerous breed, called Rufián. The Rottweiler was born on 12/07/2000 and pays for it a fee of € 43.23. Teresa, with DNI 12342345h, lives in Pez volador street, 1 of Madrid with zip code 28009. Leave the 698023410 as the contact telephone number.
-    20. Insert in the table pets a new cat, called Tintin that was born on 05/02/2003, that is not of breed and that pays 13.12 € of quota. The cat belongs to Jose Luis Bárcena Mayor, who lives on Calle Blanco, 14 in Santander with ZIP Code 37015. Your NIF is 3498740k and your phone 658765498. He has no more pets. José Luis has become a partner of the veterinary clinic.
-    21. Paco Martinez Soria has died a dog.
-    22. Return a list with the first 5 people who have the most animals in total. The name and number of total animals you have.
-    23. List the most expensive quota. (without using the ORDER BY and LIMIT clauses).
-
-</details>
-
-&nbsp;
-&nbsp;
-
 ##### d. DQL04
 
 <details>
@@ -323,31 +314,111 @@ Training exercise of design and management of databases carried out in the field
 
 &nbsp;
 
+     1. Modify the records for representate that Thomas Smith is a member of the clinic.    
+     2. Increase the cats fee in 1 €.    
+     3. Delete the records for Bellatrix Rae in the table owners. Explain each mandatory step. 
+     4. Subtract one day from the date of birth of dogs born after 01/01/2018. 
+     5. Show the youngest animal's birthday in the following format: **Tue, 18th of August, 2015** 
+     6. List the name and birthday of the cats that were born in 2019. Do it in two ways.
+     7. List all the dangerous breed for dogs. Give it the alias **dangerous animals**. 
+     8. Shows the fee paid by each cat truncated to 0 decimal places. 
+     9. List the names of the owners whose name is 4 characters long. 
+     10. Replace the owner surname Brown by Brawn. 
+     11. Calculate the age of each cat, showing the name in capital letters and the age. 
+     12. Count how many animals have not defined whether or not they are dangerous. 
+     13. Insert a new pet whose name is *Marmaduke* and it is a mastin that was born the 8th of May, 2013. The owner is Bellatrix Rae and she pays a montly fee of 30 euros. Its Identify is 124.
+     14. List the names and date of birth of all animals in the pet table. 
+     15. List all columns in the table owners. 
+     16. List the name and birthday for the cats that were born before 01/01/2020. 
+     17. List the owners who have dogs but do not have cats and show whether are partners or not. 
+     18. List the names and surnames of those owners that only have a pet, by capitalizing the names and lowercase the surnames
+     19. List the dog's names and their fee by rounding it to 1 decimal. 
+
+</details>
+
+&nbsp;
+&nbsp;
+
+##### e. DQL05
+
+<details>
+    <summary>&nbsp;&nbsp;&nbsp;&nbsp;CLICK ME TO SEE THE QUERIES 05</summary>
+
+&nbsp;
+
+    1. List the names of the cats and the fee paid for them without any decimal value.
+    2. List the different cities of the owners.
+    3. List the surnames of the owners sorted in descending order.
+    4. For each owner, return the position of the first occurrence of the number 12 in the postal code.
+    5. List the pet's name and their monthly fee sorted first by name ascendingly and secondly by the fee their owners pay descendingly.
+    6. List with the first 5 owners' name sorted descendingly by name.
+    7. List the following 4 pet names from the third sorted ascendingly.
+    8. Show the pet's name and the fee for the animal that has the lowest fee. Do it in 3 differents ways.
+    9. Show the most expensive quota. D
+    10. List the dogs' names that begin with "T".
+    11. List the pet's names that contains the letter "t". Do it, at least, in 3 differents ways.
+    12. List the name and quota for the dogs whose fees range from 10 to 50 €. Do it in 2 differents ways..
+    13. List the name and quota for the dogs that do not have a fee equal or greater than 40 €.  Do it in three different ways.
+    14. List all owners named Thomas or Bellatrixa. Do it in two ways.
+
+</details>
+
+&nbsp;
+&nbsp;
+
+##### f. DQL06
+
+<details>
+    <summary>&nbsp;&nbsp;&nbsp;&nbsp;CLICK ME TO SEE THE QUERIES 06</summary>
+
+&nbsp;
+
     1. Insert a new owner.
     2. Insert a pet to that owner.
-    3. List the first name along with the last names in one field and the number of animals they have in another field, all dog owners. The first and last names will be displayed without whites either to the right of surnames or to the left of the first name.
-    4. List the first 2 lowercase names of the animals that pay a fee > € 10 and the fee they pay by rounding it to 2 decimal places.
-    5. List the different dates of birth of animals sorted downwards.
-    6. Count how many owners have dogs and no cats.
-    7. Returns the position of the first occurrence of the letter a in the name of the owners who are called Bea or Paco. Two ways.
-    8. Return the day of the week on which the dogs whose name contains an a.
-    9. List the name and surname of all the owners in a column, putting D./Dña (both) first. Two ways:
+    3. List for each dog owner the first name an the surnames in only one field and the number of animals he have. The first name and the surname will be displayed without whites spaces before the first name nor after the surname.
+    4. List the pet names of the two first animals that pay more than 10 € per month and the fee they pay rounded to 2 decimals places.
+    5. List the birthday of each animal sorted from older to younger.
+    6. How many dogs' owners have no cats?
+    7. Returns the position of the first occurrence of the letter a in the name of the owners who are called Belltrix or Thomas. Do it in, at least, two differents ways.
+    8. Return the day of the week on which the dogs whose name contains an "a" where born.
+    9. List the owners' name and surname in only one column and display "Mr./Ms." (both) before the owner name. Do it in two differents ways.
+    10. List the cats' names that ends with a vowel.
+    11. How many dogs are there?
+    12. How many dogs' owners are there?
+    13. Reduced 1 € the monthly fee for the not dangerous dogs.
+    14. Modify to  88.99 € the monthly fee for Puma.
+    15. Delete the record that references to Plas.
+    16. Modify the cats' names changing the "a" with an "i".
+    17. Change the name of the cat Chiqui to Pepa and update its birthday with 12/12/2012.
 
-    10. List the name of all cats whose name ends with vowel.
-    11. Add all dogs have in total all owners.
-    12. How many owners have dogs.
-    13. Dogs that are not of dangerous breed are reduced € 1 the fee.
-    14. Change the fee paid per puma to become € 88.99.
-    15. Delete Plas.
-    16. Replace the a with an i in the names of cats.
-    17. Change the name and date of birth of the cat Chiqui to Pepa with date of birth 12/12/2012.
-    18. List the different first names of the owners.
-    19. List the names of the owners sorted ascendingly.
-    20. List the name of all dogs whose name ends with x.
-    21. List the name and quota of the cats that have a fee between € 20 and € 34. Do it in two ways.
-    22. List the name and quota of the animal in cents and without decimals. Display the latter field as cents in the result.
-    23. List the names of the animals that have defined if they are of dangerous breed.
-    24. List the cheapest fee. Do it in two ways.
-    25. List the name and date of birth of the 3 oldest cats. 
+</details>
+
+&nbsp;
+&nbsp;
+
+##### g. DQL07
+
+<details>
+    <summary>&nbsp;&nbsp;&nbsp;&nbsp;CLICK ME TO SEE THE QUERIES 07</summary>
+
+&nbsp;
+
+    1. List the different first names of the owners.
+    2. List the owners' names sorted ascendingly.
+    3. List the dogs' names that ends with "x".
+    4. List the name and monthly fee for cats that have a fee between 20 € and 34 €. Do it in two ways.
+    5. List the name and monthly fee in cents without decimals for each pet. Name the last field as CENTS.
+    6. List the pets' name that have defined if they are of dangerous breed.
+    7. Show the cheapest fee. Do it in two differents ways.
+    8. List the name and birthday for the 3 oldest cats. 
+    9. List the names of cats whose name is 5 characters long.
+    10. List the names of dangerous breed dogs.
+    11. List of Santander or Sevillian owners.
+    12. List the names of animals that have not been defined if they are of dangerous breed.
+    13. Inserts a new owner: Minerva Mac Gonagall, who is not a member of the clinic. She has a Rottweiler, which is of dangerous breed, called Rufián. The Rottweiler was born on 12/07/2000 and she pays for it a fee of € 43.23. Minerva, with DNI 12342345h, lives in Flying Fish street, 1 in Stirling with post code ES0 0PY, and her telephone number is 698023410.
+    14. Insert in the table pets a new cat, called Cheshire that was born on 05/02/2003, it is not of a dangerous breed and the owner pays 13.12 € of fee. The cat belongs to Alice Carroll, who lives on 14 Red st, in Santander with ZIP Code BF7 0JL. Her NIF is 3498740K and her phone 658765498. She has no more pets. Alice has become a partner of the veterinary clinic.
+    15. Update the tables .
+    16. Return a list with the 5 people who have the most quantity of animals. For each of them show the name, the surname and the total animals they have.
+    17. List the most expensive monthly fee. Do it in three differents ways.
 
 </details>
