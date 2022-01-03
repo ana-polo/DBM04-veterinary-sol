@@ -12,7 +12,7 @@
     1. DDL.
     2. DML.
     3. DQL.
-        
+
         1. Querying data 1.
         2. Querying data 2.
         3. Querying data 3.
@@ -216,10 +216,8 @@ Training exercise of design and management of databases carried out in the field
 
 ##### a. DQL01
 
-&nbsp;
-
 <details>
-    <summary>CLICK ME TO SEE THE QUERIES 01</summary>
+    <summary>&nbsp;&nbsp;&nbsp;&nbsp;CLICK ME TO SEE THE QUERIES 01</summary>
 
 &nbsp;
 
@@ -249,10 +247,8 @@ Training exercise of design and management of databases carried out in the field
 
 ##### b. DQL02
 
-&nbsp;
-
 <details>
-    <summary>CLICK ME TO SEE THE QUERIES 02</summary>
+    <summary>&nbsp;&nbsp;&nbsp;&nbsp;CLICK ME TO SEE THE QUERIES 02</summary>
 
 &nbsp;
 
@@ -286,10 +282,8 @@ Training exercise of design and management of databases carried out in the field
 
 ##### c. DQL03
 
-&nbsp;
-
 <details>
-    <summary>CLICK ME TO SEE THE QUERIES 03</summary>
+    <summary>&nbsp;&nbsp;&nbsp;&nbsp;CLICK ME TO SEE THE QUERIES 03</summary>
 
 &nbsp;
 
@@ -324,10 +318,8 @@ Training exercise of design and management of databases carried out in the field
 
 ##### d. DQL04
 
-&nbsp;
-
 <details>
-    <summary>CLICK ME TO SEE THE QUERIES 04</summary>
+    <summary>&nbsp;&nbsp;&nbsp;&nbsp;CLICK ME TO SEE THE QUERIES 04</summary>
 
 &nbsp;
 
