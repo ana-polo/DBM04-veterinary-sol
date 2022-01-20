@@ -95,7 +95,7 @@ Training exercise of design and management of databases carried out in the field
     -  Identity card 
     -  Telephone (Only one per each owner)
     -  Address
-    -  City. The default value must be Edimburgh
+    -  City. The default value must be Edinburgh
     -  Post code
     -  Whether you are a member or not, by default they are not
     -  Number of dogs, can not be greater than 7
@@ -155,15 +155,15 @@ Training exercise of design and management of databases carried out in the field
 ##### PETS_OWNERS
 
      1 ;   Bellatrix  ; Graham   ; 11111111h ; 698765432 ; Cromwell Road                        ; London    ; SW7 5BD ; TRUE  ; 1 ; 1 
-     2 ; Thomas       ; Smith    ; 22222222l ; 698345432 ; 4 Lochrin Square 96 Fountainbrigde   ; Edimburgh ; EH3 9QA ; FALSE ; 2 ; 1 
-     3 ; Jack         ; Johnson  ; 33333333j ; 654345432 ; 38 Thistle St                        ; Edimburgh ; EH2 1EN ; FALSE ; 0 ; 1 
-     4 ;  Matthew     ; Williams ; 44444444d ; 654332345 ; 10 Princess Street                   ; Edimburgh ; EH2 2AN ; FALSE ; 2 ; 5 
+     2 ; Thomas       ; Smith    ; 22222222l ; 698345432 ; 4 Lochrin Square 96 Fountainbrigde   ; Edinburgh ; EH3 9QA ; FALSE ; 2 ; 1 
+     3 ; Jack         ; Johnson  ; 33333333j ; 654345432 ; 38 Thistle St                        ; Edinburgh ; EH2 1EN ; FALSE ; 0 ; 1 
+     4 ;  Matthew     ; Williams ; 44444444d ; 654332345 ; 10 Princess Street                   ; Edinburgh ; EH2 2AN ; FALSE ; 2 ; 5 
      5 ; Anna         ; Brown    ; 5555555p  ; 623235432 ; 2 Gulliver Street                    ; London    ; SE6 7LT ; FALSE ; 4 ; 2 
-     6 ; Sofia        ; Jones    ; 66666666u ; 665456789 ; 12 Coates Place                      ; Edimburgh ; EH3 7AA ; TRUE  ; 1 ; 0 
+     6 ; Sofia        ; Jones    ; 66666666u ; 665456789 ; 12 Coates Place                      ; Edinburgh ; EH3 7AA ; TRUE  ; 1 ; 0 
      7 ; Matthew      ; Taylor   ; 77777777b ; 634562343 ; 17 Southgate Place                   ; Bath      ; BA1 1AP ; FALSE ; 1 ; 0 
      8 ; Bellatrix    ; Rae      ; 88888888d ; 698786543 ; 1 Ness Walk                          ; Inverness ; IV3 5TE ; FALSE ; 0 ; 3 
-     9 ;    Theresa   ; Harper   ; 99999999j ; 698765438 ; Drumsheugh Garden                    ; Edimburgh ; EH3 7RN ; TRUE  ; 1 ; 1 
-    10 ; Nathaniel    ; Campbell ; 12123432u ; 690987640 ; Leith Street                         ; Edimburgh ; EH1 3SP ; FALSE ; 0 ; 1 
+     9 ;    Theresa   ; Harper   ; 99999999j ; 698765438 ; Drumsheugh Garden                    ; Edinburgh ; EH3 7RN ; TRUE  ; 1 ; 1 
+    10 ; Nathaniel    ; Campbell ; 12123432u ; 690987640 ; Leith Street                         ; Edinburgh ; EH1 3SP ; FALSE ; 0 ; 1 
 
 ##### PETS
 
@@ -233,7 +233,7 @@ Training exercise of design and management of databases carried out in the field
     10. List the pet's name for all pets that are not a dangerous breed. 
     11. List all record for the pets that are born in 2013.
     12. List all dog's name.
-    13. List the dogs owners' name that are partners from Edimburgh.
+    13. List the dogs owners' name that are partners from Edinburgh.
     14. List the records for the pets that are owned by the owner 9.
     15. List all record for the unknown breed pets (mongrel).
     16. List the name and the anual fee for each dog.
@@ -262,12 +262,12 @@ Training exercise of design and management of databases carried out in the field
     10. List the pet owners' name and surname who are not pertners and that have more cats than dogs.
     11. What do these comands do ?
 
-        *SELECT*
-            *SUM( number_of_cats )*
-        *FROM* 
-            *owners*;
+        SELECT
+            SUM( number_of_cats )
+        FROM 
+            owners;
 
-    12. How many owners ares fron United Kindown ?
+    12. How many owners are from Edinburgh ?
     13. Show the total number of cats, the total number of dogs and the total number of pets there are.
     14. How many partners have any cat?
 

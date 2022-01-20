@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS owners (
     identity_card CHAR( 9 ) NOT NULL,
     telephone CHAR( 9 ) NOT NULL,
     address VARCHAR( 40 ),
-    city VARCHAR( 20 ) NOT NULL DEFAULT 'Edimburgh',
+    city VARCHAR( 20 ) NOT NULL DEFAULT 'Edinburgh',
     post_code CHAR( 7 ) NOT NULL,
     member_clinic BOOLEAN NOT NULL DEFAULT 0,
     number_of_dogs TINYINT UNSIGNED NOT NULL,
