@@ -7,7 +7,9 @@
 
 USE veterinary;
 
-/*    1. List the name, the anual fee, the anual fee round with one decimal, the anual fee truqued without decimals for all pets. */
+/*    
+-- 1. List the name, the anual fee, the anual fee round with one decimal, the anual fee truqued without decimals for all pets. 
+*/
 
 SELECT 
     pets.pet_name,
@@ -19,7 +21,9 @@ FROM
 
 
 
-/*    2. List the daily fee (think that all month has 30 days) for all pets, show each quantity round with 3 decimals an trunced with 3 decimals too. */
+/*    
+-- 2. List the daily fee (think that all month has 30 days) for all pets, show each quantity round with 3 decimals an trunced with 3 decimals too. 
+*/
 
 SELECT 
     pets.pet_name,
@@ -31,9 +35,11 @@ FROM
 
 
 
-/*    3. List all records for pets that are born in march, 2019. */
+/*    
+-- 3. List all records for pets that are born in march, 2019. 
+*/
 
-    /*--- OPC 1: USING MONTHNAME AND YEAR */
+    -- OPC 1: USING MONTHNAME AND YEAR.
 
 SELECT 
     pets.*
@@ -44,7 +50,7 @@ WHERE
         AND YEAR( pets.birth ) = 2019;
 
 
-    /*--- OPC 2: USING MONTH AND YEAR */
+    -- OPC 2: USING MONTH AND YEAR.
 
 SELECT 
     pets.*
@@ -55,7 +61,7 @@ WHERE
         AND YEAR( pets.birth ) = 2019;
 
 
-    /*--- OPC 3: USING COMPARATIVES */
+    -- OPC 3: USING COMPARATIVES.
 
 SELECT 
     pets.*
@@ -66,7 +72,7 @@ WHERE
         AND pets.birth <= '2019-03-31';
 
 
-    /*--- OPC 4: USING BETWEEN */
+    -- OPC 4: USING BETWEEN.
 
 SELECT 
     pets.*
@@ -77,7 +83,9 @@ WHERE
 
 
 
-/*    4. List the records for the dangerous dogs that are owned by the owner 5.*/
+/*    
+-- 4. List the records for the dangerous dogs that are owned by the owner 5.
+*/
 
 SELECT 
     pets.*
@@ -89,7 +97,9 @@ WHERE
 
 
 
-/*    5. List the record for the pets that have no informed the dangerous field. */
+/*    
+-- 5. List the record for the pets that have no informed the dangerous field. 
+*/
 
 SELECT 
     pets.*
@@ -100,7 +110,9 @@ WHERE
 
 
 
-/*    6. List the record for the dangerous dogs whose monthly fee is more than 20 euros.  */
+/*    
+-- 6. List the record for the dangerous dogs whose monthly fee is more than 20 euros.  
+*/
 
 SELECT 
     pets.*
@@ -113,7 +125,9 @@ WHERE
 
 
 
-/*    7. List the cat owners' name and surname. */
+/*    
+-- 7. List the cat owners' name and surname. 
+*/
 
 SELECT 
     owners.owner_name, owners.surname
@@ -126,7 +140,9 @@ WHERE
 
 
 
-/*    8. List the pet owners' name and surname who have more dogs than cats.  */
+/*    
+-- 8. List the pet owners' name and surname who have more dogs than cats.  
+*/
 
 SELECT 
     owners.owner_name, owners.surname
@@ -137,7 +153,9 @@ WHERE
 
 
 
-/*    9. List the partner's record who have more cats than dogs. */
+/*    
+-- 9. List the partner's record who have more cats than dogs. 
+*/
 
 SELECT 
     owners.*
@@ -149,7 +167,9 @@ WHERE
 
 
 
-/*    10. List the pet owners' name and surname who are not partners and that have more cats than dogs. */
+/*    
+-- 10. List the pet owners' name and surname who are not partners and that have more cats than dogs. 
+*/
 
 SELECT 
     owners.owner_name, owners.surname
@@ -161,18 +181,22 @@ WHERE
 
 
 
-/*    11. What do these comands do ? */
+/*    
+-- 11. What do these comands do ? 
+*/
 
 SELECT 
     SUM(owners.number_of_cats)
 FROM
     owners;
  
- /* Add the cats of all the owners */
+    -- ANSWER: Add the cats of all the owners
  
  
  
- /*   12. How many owners are from Edinburgh ? */
+/*   
+-- 12. How many owners are from Edinburgh ? 
+*/
  
 SELECT 
     COUNT(owners.id_owner) AS 'Owners fron Edinburgh'
@@ -183,7 +207,9 @@ WHERE
  
  
  
- /*   13. Show the total number of cats, the total number of dogs and the total number of pets there are. */
+/*   
+-- 13. Show the total number of cats, the total number of dogs and the total number of pets there are. 
+*/
 
 SELECT 
     COUNT(owners.number_of_cats) AS 'cats', 
@@ -194,7 +220,9 @@ FROM
 
 
 
- /*   14. How many partners have any cat? */
+/*   
+-- 14. How many partners have any cat? 
+*/
 
 SELECT 
     COUNT( * ) AS 'Partners that have any cats'

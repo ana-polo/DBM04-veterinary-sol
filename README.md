@@ -1,4 +1,4 @@
-# DBM04-Veterinary-sol
+# DBM04 Veterinary solution
 
 ![Logo de Team](https://github.com/ana-polo/DBM04-veterinary-sol/blob/main/DBM.gif "Team logo")
 

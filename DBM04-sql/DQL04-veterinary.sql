@@ -8,7 +8,9 @@
 
 USE veterinary;
 
-/*  1. Modify the records for representate that Thomas Smith is a member of the clinic.  */
+/*  
+-- 1. Modify the records for representate that Thomas Smith is a member of the clinic.  
+*/
 
 SELECT 
     owners.owner_name AS Name, owners.member_clinic AS Member
@@ -36,7 +38,9 @@ WHERE
         AND UCASE(owners.surname) LIKE 'SMITH';
 
 
-/*  2. Increase the cats fee in 1 €.  */
+/*  
+-- 2. Increase the cats fee in 1 €.  
+*/
 
 UPDATE pets 
 SET 
@@ -46,9 +50,10 @@ WHERE
 
 
 
-/*  3. Delete the records for Bellatrix Rae in the table owners. What do you have to do before?
-    
-    /* --- First of all, it is mandatory to know the pets that she owns and DELETE their records in the pets' table before */
+/*  
+-- 3. Delete the records for Bellatrix Rae in the table owners. What do you have to do before?
+*/   
+    -- First of all, it is mandatory to know the pets that she owns and DELETE their records in the pets' table before.
 
 DELETE FROM pets 
 WHERE
@@ -62,7 +67,7 @@ WHERE
         AND UPPER( owners.surname ) LIKE 'RAE');
 
 
-    /*--- After deleting those pets, it is possible to delete the owner */
+    -- After deleting those pets, it is possible to delete the owner.
 
 DELETE FROM owners 
     WHERE
@@ -70,7 +75,7 @@ DELETE FROM owners
         AND UPPER( owners.surname ) LIKE 'RAE';
 
 
-    /*--- It is possible to verify the changes */
+    -- It is possible to verify the changes.
     
 SELECT 
     owners.id_owner
@@ -82,7 +87,9 @@ WHERE
 
 
         
-/*  4. Subtract one day from the date of birth of dogs born after 01/01/2018.  */
+/*  
+-- 4. Subtract one day from the date of birth of dogs born after 01/01/2018.  
+*/
 
 SELECT 
     pets.pet_name, pets.birth AS antes
@@ -108,9 +115,11 @@ WHERE
 
 
 
-/*  5. Show the youngest animal's birthday in the following format: **Tue, 18th of August, 2015**.  */
+/*  
+-- 5. Show the youngest animal's birthday in the following format: **Tue, 18th of August, 2015**.  
+*/
 
-    /*--- OPC 1: Using MAX() */
+    -- OPC 1: Using MAX().
     
 SELECT 
     DATE_FORMAT( MAX( pets.birth ), '%W %D %M %Y' ) AS Birthday
@@ -118,7 +127,7 @@ FROM
     pets; 
 
 
-    /*--- OPC 2: Ordering the list */
+    -- OPC 2: Ordering the list.
 
 SELECT 
     DATE_FORMAT( pets.birth, '%W, %D of %M, %Y' ) AS Birthday
@@ -129,9 +138,11 @@ LIMIT 1;
 
 
 
-/*  6. List the name and birthday of the cats that were born in 2019. Do it in two ways.  */
+/*  
+-- 6. List the name and birthday of the cats that were born in 2019. Do it in two ways.  
+*/
 
-    /*--- OPC 1: Using YEAR() */
+    -- OPC 1: Using YEAR().
     
 SELECT 
     pets.pet_name AS Name, pets.birth AS Birthday
@@ -142,7 +153,7 @@ WHERE
         AND YEAR( pets.birth ) = 2019;
     
     
-    /*--- OPC 2: Using BETWEEN operator */
+    -- OPC 2: Using BETWEEN operator.
 
 SELECT 
     pets.pet_name AS Name, pets.birth AS Birthday
@@ -153,7 +164,7 @@ WHERE
         AND pets.birth BETWEEN '2019-01-01' and '2019-12-31';
     
     
-    /*--- OPC 3: Using COMPARATIVES operators */
+    -- OPC 3: Using COMPARATIVES operators.
 
 SELECT 
     pets.pet_name AS Name, pets.birth AS Birthday
@@ -166,7 +177,9 @@ WHERE
 
 
 
-/*  7. List all the dangerous breed for dogs. Create the alias "Dangerous animals".  */
+/*  
+-- 7. List all the dangerous breed for dogs. Create the alias "Dangerous animals".  
+*/
 
 SELECT 
     pets.breed AS 'dangerous animals'
@@ -178,7 +191,9 @@ WHERE
 
 
 
-/*  8. Shows the fee paid by each cat truncated to 0 decimal places.  */
+/*  
+-- 8. Shows the fee paid by each cat truncated to 0 decimal places.  
+*/
 
 SELECT 
     pets.pet_name AS Name, TRUNCATE( pets.monthly_fee, 0 ) AS Fee
@@ -189,7 +204,9 @@ WHERE
 
 
 
-/*  9. List the names of the owners whose name is 4 characters long.  */
+/*  
+-- 9. List the names of the owners whose name is 4 characters long.  
+*/
 
 SELECT 
     owners.owner_name
@@ -200,7 +217,9 @@ WHERE
 
 
 
-/*  10. Replace the owner surname Brown by Brawn.  */
+/*  
+-- 10. Replace the owner surname Brown by Brawn.  
+*/
 
 select owners.surname 
 from owners
@@ -223,7 +242,9 @@ WHERE
 
 
 
-/*  11. Calculate the age of each cat, showing the name in capital letters and the age.  */
+/*  
+-- 11. Calculate the age of each cat, showing the name in capital letters and the age.  
+*/
 
 SELECT 
     UPPER( pets.pet_name ) AS Name, (  YEAR( CURRENT_DATE() ) - YEAR( pets.birth ) ) AS Age
@@ -234,7 +255,9 @@ WHERE
 
 
 
-/*  12. Count how many animals have not defined whether or not they are dangerous.  */
+/*  
+-- 12. Count how many animals have not defined whether or not they are dangerous.  
+*/
 
 SELECT 
     COUNT(pets.dangerous_breed) AS Total
@@ -245,7 +268,9 @@ WHERE
 
 
 
-/*  13. Insert a new pet whose name is *Marmaduke* and it is a mastin that was born the 8th of May, 2013. The owner is Bellatrix Rae and she pays a montly fee of 30 euros. And the vaalue for the identifier is 124 */
+/*  
+-- 13. Insert a new pet whose name is *Marmaduke* and it is a mastin that was born the 8th of May, 2013. The owner is Bellatrix Rae and she pays a montly fee of 30 euros. And the vaalue for the identifier is 124 
+*/
 
 INSERT INTO pets ( pets.id_pet, pets.pet_name, pets.birth, pets.animal, pets.breed, pets.monthly_fee, pets.fk_id_owner )
     VALUES ( '124', 'Marmaduke', '2013-05-08', 'dog', 'mastin', 30.00, ( SELECT 
@@ -263,16 +288,20 @@ FROM
 
 
 
-/*	14. List the names and birthday of all animals.  */
+/*	
+-- 14. List the names and birthday of all animals.  
+*/
 
 SELECT 
-    pets.pet_name AS name, pets.birth AS Birthday
+    pets.pet_name AS name, pets.birth AS 'Birthday'
 FROM
     pets;
 
 
 
-/*  15. List all columns in the table owners.  */
+/*  
+-- 15. List all columns in the table owners.  
+*/
 
 SELECT 
     *
@@ -281,7 +310,9 @@ FROM
 
 
 
-/*  16. List the name and birthday for all cats that were born before 01/01/2020. */
+/*  
+-- 16. List the name and birthday for all cats that were born before 01/01/2020. 
+*/
 
 SELECT 
     pets.pet_name AS Name, pets.birth AS Birthday
@@ -292,7 +323,9 @@ WHERE
 
 
 
-/*  17. List the owners who have dogs but do not have cats and show whether are partners or not. */
+/*  
+-- 17. List the owners who have dogs but do not have cats and show whether are partners or not. 
+*/
 
 SELECT 
     owners.owner_name AS Name,
@@ -306,7 +339,9 @@ WHERE
 
 
 
-/*  18. List the names and surnames of those owners that only have a pet, by capitalizing the names and lowercase the surnames. */
+/*  
+-- 18. List the names and surnames of those owners that only have a pet, by capitalizing the names and lowercase the surnames. 
+*/
 
 SELECT 
     UPPER(owners.owner_name) AS Name,
@@ -318,7 +353,9 @@ WHERE
 
 
 
-/*  19. List the dog's names and their fee by rounding it to 1 decimal. */
+/*  
+-- 19. List the dog´s names and their fee by rounding it to 1 decimal. 
+*/
 
 SELECT 
     pets.pet_name AS Name,
