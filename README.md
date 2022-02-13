@@ -357,7 +357,7 @@ Training exercise of design and management of databases carried out in the field
     9. Show the most expensive quota. D
     10. List the dogs' names that begin with "T".
     11. List the pet's names that contains the letter "t". Do it, at least, in 3 differents ways.
-    12. List the name and quota for the dogs whose fees range from 10 to 50 €. Do it in 2 differents ways..
+    12. List the name and quota for the dogs whose fees range from 10 to 50 €. Do it in 2 differents ways.
     13. List the name and quota for the dogs that do not have a fee equal or greater than 40 €.  Do it in three different ways.
     14. List all owners named Thomas or Bellatrixa. Do it in two ways.
 
